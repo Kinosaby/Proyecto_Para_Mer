@@ -1,164 +1,168 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>¡Feliz Cumpleaños! 🎂</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <!-- Globos flotantes -->
-    <div class="balloon balloon-1">🎈</div>
-    <div class="balloon balloon-2">🎈</div>
-    <div class="balloon balloon-3">🎈</div>
-    <div class="balloon balloon-4">🎈</div>
-    <div class="balloon balloon-5">🎈</div>
-    <div class="balloon balloon-6">🎈</div>
 
-    <!-- Confeti -->
-    <canvas id="confettiCanvas"></canvas>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>¡Feliz Cumpleaños! 🎂</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-    <div class="container">
-      <!-- Título principal -->
-      <div class="header-section">
-        <h1 class="main-title">Feliz cumpleaños</h1>
-        <h2 class="name-title">Mi Amor</h2>
-        <p class="nickname">💕 Piojito 💕</p>
-      </div>
+<body>
+  <a href="../" class="btn-back">← Volver</a>
+  <!-- Globos flotantes -->
+  <div class="balloon balloon-1">🎈</div>
+  <div class="balloon balloon-2">🎈</div>
+  <div class="balloon balloon-3">🎈</div>
+  <div class="balloon balloon-4">🎈</div>
+  <div class="balloon balloon-5">🎈</div>
+  <div class="balloon balloon-6">🎈</div>
 
-      <!-- Pastel de cumpleaños -->
-      <div class="cake-container">
-        <div class="cake">
-          <div class="candles">
-            <div class="candle">
-              <div class="flame"></div>
-            </div>
-            <div class="candle">
-              <div class="flame"></div>
-            </div>
-            <div class="candle">
-              <div class="flame"></div>
-            </div>
+  <!-- Confeti -->
+  <canvas id="confettiCanvas"></canvas>
+
+  <div class="container">
+    <!-- Título principal -->
+    <div class="header-section">
+      <h1 class="main-title">Feliz cumpleaños</h1>
+      <h2 class="name-title">Mi Amor</h2>
+      <p class="nickname">💕 Piojito 💕</p>
+    </div>
+
+    <!-- Pastel de cumpleaños -->
+    <div class="cake-container">
+      <div class="cake">
+        <div class="candles">
+          <div class="candle">
+            <div class="flame"></div>
           </div>
-          <div class="cake-layer cake-layer-1"></div>
-          <div class="cake-layer cake-layer-2"></div>
-          <div class="cake-layer cake-layer-3"></div>
-        </div>
-      </div>
-
-      <!-- Fecha especial -->
-      <div class="date-container">
-        <div class="date-card">
-          <span class="date-number">30</span>
-          <span class="date-month">de Abril</span>
-        </div>
-      </div>
-
-      <!-- Mensaje especial -->
-      <div class="message-card">
-        <p class="message-text">
-          ✨ En este día tan especial ✨<br /><br />
-          Querida Piojito,<br />
-          que este nuevo año de vida esté lleno de<br />
-          alegría, amor, risas y sueños cumplidos.<br /><br />
-          ¡Que seas muy feliz hoy y siempre!<br /><br />
-          💖 Con todo mi cariño 💖
-        </p>
-      </div>
-
-      <!-- Poemas de cumpleaños -->
-      <div class="poems-section">
-        <h3 class="poems-title">Poemas para ti 📜</h3>
-
-        <div class="poem-card special">
-          <div class="poem-number">1</div>
-          <p class="poem-verse">
-            Hoy celebro tu existencia,<br />
-            cada sonrisa, cada esencia,<br />
-            eres luz en mi camino,<br />
-            mi destino, mi destino.<br /><br />
-
-            Piojito de mi corazón,<br />
-            en este día de celebración,<br />
-            quiero que siempre recuerdes,<br />
-            que mi amor por ti no se pierde.
-          </p>
-        </div>
-
-        <div class="poem-card special">
-          <div class="poem-number">2</div>
-          <p class="poem-verse">
-            En cada año que cumples,<br />
-            mi amor por ti se multiplica,<br />
-            eres la estrella que ilumina,<br />
-            cada noche, cada día.<br /><br />
-
-            Que este nuevo año de vida,<br />
-            esté lleno de bendiciones,<br />
-            de risas, amor y alegrías,<br />
-            y mil bellas emociones.
-          </p>
-        </div>
-
-        <div class="poem-card special">
-          <div class="poem-number">3</div>
-          <p class="poem-verse">
-            Eres mi sol cada mañana,<br />
-            mi luna en la oscuridad,<br />
-            mi razón de ser y estar,<br />
-            mi eterna felicidad.<br /><br />
-
-            Feliz cumpleaños mi amor,<br />
-            que sigan muchos años más,<br />
-            a tu lado quiero estar,<br />
-            para siempre, nada más.
-          </p>
-        </div>
-      </div>
-
-      <!-- Deseos -->
-      <div class="wishes-section">
-        <h3 class="wishes-title">Mis Deseos Para Ti</h3>
-        <div class="wishes-grid">
-          <div class="wish-card">
-            <div class="wish-icon">🎁</div>
-            <p class="wish-text">Sorpresas maravillosas</p>
+          <div class="candle">
+            <div class="flame"></div>
           </div>
-          <div class="wish-card">
-            <div class="wish-icon">⭐</div>
-            <p class="wish-text">Sueños que se hagan realidad</p>
-          </div>
-          <div class="wish-card">
-            <div class="wish-icon">💝</div>
-            <p class="wish-text">Amor infinito</p>
-          </div>
-          <div class="wish-card">
-            <div class="wish-icon">😊</div>
-            <p class="wish-text">Sonrisas cada día</p>
-          </div>
-          <div class="wish-card">
-            <div class="wish-icon">🌟</div>
-            <p class="wish-text">Momentos mágicos</p>
-          </div>
-          <div class="wish-card">
-            <div class="wish-icon">🎉</div>
-            <p class="wish-text">Muchas celebraciones</p>
+          <div class="candle">
+            <div class="flame"></div>
           </div>
         </div>
-      </div>
-
-      <!-- Botón interactivo -->
-      <button class="celebration-button" id="celebrateBtn">
-        <span class="button-text">¡Haz clic para celebrar! 🎊</span>
-      </button>
-
-      <!-- Mensaje final -->
-      <div class="final-message">
-        <p>¡Que tengas el mejor día de tu vida!</p>
-        <p class="signature">Con amor, tu novio 💕</p>
+        <div class="cake-layer cake-layer-1"></div>
+        <div class="cake-layer cake-layer-2"></div>
+        <div class="cake-layer cake-layer-3"></div>
       </div>
     </div>
 
-    <script src="script.js"></script>
-  </body>
+    <!-- Fecha especial -->
+    <div class="date-container">
+      <div class="date-card">
+        <span class="date-number">30</span>
+        <span class="date-month">de Abril</span>
+      </div>
+    </div>
+
+    <!-- Mensaje especial -->
+    <div class="message-card">
+      <p class="message-text">
+        ✨ En este día tan especial ✨<br /><br />
+        Querida Piojito,<br />
+        que este nuevo año de vida esté lleno de<br />
+        alegría, amor, risas y sueños cumplidos.<br /><br />
+        ¡Que seas muy feliz hoy y siempre!<br /><br />
+        💖 Con todo mi cariño 💖
+      </p>
+    </div>
+
+    <!-- Poemas de cumpleaños -->
+    <div class="poems-section">
+      <h3 class="poems-title">Poemas para ti 📜</h3>
+
+      <div class="poem-card special">
+        <div class="poem-number">1</div>
+        <p class="poem-verse">
+          Hoy celebro tu existencia,<br />
+          cada sonrisa, cada esencia,<br />
+          eres luz en mi camino,<br />
+          mi destino, mi destino.<br /><br />
+
+          Piojito de mi corazón,<br />
+          en este día de celebración,<br />
+          quiero que siempre recuerdes,<br />
+          que mi amor por ti no se pierde.
+        </p>
+      </div>
+
+      <div class="poem-card special">
+        <div class="poem-number">2</div>
+        <p class="poem-verse">
+          En cada año que cumples,<br />
+          mi amor por ti se multiplica,<br />
+          eres la estrella que ilumina,<br />
+          cada noche, cada día.<br /><br />
+
+          Que este nuevo año de vida,<br />
+          esté lleno de bendiciones,<br />
+          de risas, amor y alegrías,<br />
+          y mil bellas emociones.
+        </p>
+      </div>
+
+      <div class="poem-card special">
+        <div class="poem-number">3</div>
+        <p class="poem-verse">
+          Eres mi sol cada mañana,<br />
+          mi luna en la oscuridad,<br />
+          mi razón de ser y estar,<br />
+          mi eterna felicidad.<br /><br />
+
+          Feliz cumpleaños mi amor,<br />
+          que sigan muchos años más,<br />
+          a tu lado quiero estar,<br />
+          para siempre, nada más.
+        </p>
+      </div>
+    </div>
+
+    <!-- Deseos -->
+    <div class="wishes-section">
+      <h3 class="wishes-title">Mis Deseos Para Ti</h3>
+      <div class="wishes-grid">
+        <div class="wish-card">
+          <div class="wish-icon">🎁</div>
+          <p class="wish-text">Sorpresas maravillosas</p>
+        </div>
+        <div class="wish-card">
+          <div class="wish-icon">⭐</div>
+          <p class="wish-text">Sueños que se hagan realidad</p>
+        </div>
+        <div class="wish-card">
+          <div class="wish-icon">💝</div>
+          <p class="wish-text">Amor infinito</p>
+        </div>
+        <div class="wish-card">
+          <div class="wish-icon">😊</div>
+          <p class="wish-text">Sonrisas cada día</p>
+        </div>
+        <div class="wish-card">
+          <div class="wish-icon">🌟</div>
+          <p class="wish-text">Momentos mágicos</p>
+        </div>
+        <div class="wish-card">
+          <div class="wish-icon">🎉</div>
+          <p class="wish-text">Muchas celebraciones</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Botón interactivo -->
+    <button class="celebration-button" id="celebrateBtn">
+      <span class="button-text">¡Haz clic para celebrar! 🎊</span>
+    </button>
+
+    <!-- Mensaje final -->
+    <div class="final-message">
+      <p>¡Que tengas el mejor día de tu vida!</p>
+      <p class="signature">Con amor, tu novio 💕</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
 </html>

@@ -37,10 +37,13 @@ body {
 }
 
 @keyframes sunPulse {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: scale(1);
         box-shadow: 0 0 50px rgba(255, 215, 0, 0.6);
     }
+
     50% {
         transform: scale(1.1);
         box-shadow: 0 0 80px rgba(255, 215, 0, 0.8);
@@ -59,14 +62,30 @@ body {
     animation: rayRotate 8s linear infinite;
 }
 
-.sun-ray:nth-child(1) { transform: translate(-50%, -50%) rotate(0deg); }
-.sun-ray:nth-child(2) { transform: translate(-50%, -50%) rotate(90deg); }
-.sun-ray:nth-child(3) { transform: translate(-50%, -50%) rotate(45deg); }
-.sun-ray:nth-child(4) { transform: translate(-50%, -50%) rotate(135deg); }
+.sun-ray:nth-child(1) {
+    transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.sun-ray:nth-child(2) {
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.sun-ray:nth-child(3) {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.sun-ray:nth-child(4) {
+    transform: translate(-50%, -50%) rotate(135deg);
+}
 
 @keyframes rayRotate {
-    from { opacity: 0.6; }
-    to { opacity: 1; }
+    from {
+        opacity: 0.6;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 /* Nubes */
@@ -155,6 +174,7 @@ body {
     from {
         transform: translateX(0);
     }
+
     to {
         transform: translateX(calc(100vw + 200px));
     }
@@ -187,15 +207,20 @@ body {
 }
 
 @keyframes butterflyFly {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translate(0, 0) rotate(0deg);
     }
+
     25% {
         transform: translate(100px, -50px) rotate(10deg);
     }
+
     50% {
         transform: translate(200px, 20px) rotate(-10deg);
     }
+
     75% {
         transform: translate(100px, 50px) rotate(5deg);
     }
@@ -218,9 +243,12 @@ body {
 }
 
 @keyframes titleBounce {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(-10px);
     }
@@ -253,16 +281,33 @@ body {
     animation: gentleSway 4s ease-in-out infinite;
 }
 
-.gerbera:nth-child(1) { animation-delay: 0s; }
-.gerbera:nth-child(2) { animation-delay: 0.5s; }
-.gerbera:nth-child(3) { animation-delay: 1s; }
-.gerbera:nth-child(4) { animation-delay: 1.5s; }
-.gerbera:nth-child(5) { animation-delay: 2s; }
+.gerbera:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.gerbera:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.gerbera:nth-child(3) {
+    animation-delay: 1s;
+}
+
+.gerbera:nth-child(4) {
+    animation-delay: 1.5s;
+}
+
+.gerbera:nth-child(5) {
+    animation-delay: 2s;
+}
 
 @keyframes gentleSway {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: rotate(0deg);
     }
+
     50% {
         transform: rotate(3deg);
     }
@@ -328,18 +373,53 @@ body {
 }
 
 /* Posicionar pétalos en círculo */
-.petal:nth-child(1) { transform: translate(-50%, -50%) rotate(0deg) translateY(-40px); }
-.petal:nth-child(2) { transform: translate(-50%, -50%) rotate(30deg) translateY(-40px); }
-.petal:nth-child(3) { transform: translate(-50%, -50%) rotate(60deg) translateY(-40px); }
-.petal:nth-child(4) { transform: translate(-50%, -50%) rotate(90deg) translateY(-40px); }
-.petal:nth-child(5) { transform: translate(-50%, -50%) rotate(120deg) translateY(-40px); }
-.petal:nth-child(6) { transform: translate(-50%, -50%) rotate(150deg) translateY(-40px); }
-.petal:nth-child(7) { transform: translate(-50%, -50%) rotate(180deg) translateY(-40px); }
-.petal:nth-child(8) { transform: translate(-50%, -50%) rotate(210deg) translateY(-40px); }
-.petal:nth-child(9) { transform: translate(-50%, -50%) rotate(240deg) translateY(-40px); }
-.petal:nth-child(10) { transform: translate(-50%, -50%) rotate(270deg) translateY(-40px); }
-.petal:nth-child(11) { transform: translate(-50%, -50%) rotate(300deg) translateY(-40px); }
-.petal:nth-child(12) { transform: translate(-50%, -50%) rotate(330deg) translateX(35px); }
+.petal:nth-child(1) {
+    transform: translate(-50%, -50%) rotate(0deg) translateY(-40px);
+}
+
+.petal:nth-child(2) {
+    transform: translate(-50%, -50%) rotate(30deg) translateY(-40px);
+}
+
+.petal:nth-child(3) {
+    transform: translate(-50%, -50%) rotate(60deg) translateY(-40px);
+}
+
+.petal:nth-child(4) {
+    transform: translate(-50%, -50%) rotate(90deg) translateY(-40px);
+}
+
+.petal:nth-child(5) {
+    transform: translate(-50%, -50%) rotate(120deg) translateY(-40px);
+}
+
+.petal:nth-child(6) {
+    transform: translate(-50%, -50%) rotate(150deg) translateY(-40px);
+}
+
+.petal:nth-child(7) {
+    transform: translate(-50%, -50%) rotate(180deg) translateY(-40px);
+}
+
+.petal:nth-child(8) {
+    transform: translate(-50%, -50%) rotate(210deg) translateY(-40px);
+}
+
+.petal:nth-child(9) {
+    transform: translate(-50%, -50%) rotate(240deg) translateY(-40px);
+}
+
+.petal:nth-child(10) {
+    transform: translate(-50%, -50%) rotate(270deg) translateY(-40px);
+}
+
+.petal:nth-child(11) {
+    transform: translate(-50%, -50%) rotate(300deg) translateY(-40px);
+}
+
+.petal:nth-child(12) {
+    transform: translate(-50%, -50%) rotate(330deg) translateX(35px);
+}
 
 /* Centro de la flor */
 .center {
@@ -390,9 +470,11 @@ body {
     0% {
         transform: translateX(-50%) scale(0.8);
     }
+
     50% {
         transform: translateX(-50%) scale(1.3);
     }
+
     100% {
         transform: translateX(-50%) scale(1);
     }
@@ -466,13 +548,11 @@ body {
     left: 0;
     width: 100%;
     height: 20px;
-    background: repeating-linear-gradient(
-        90deg,
-        transparent,
-        transparent 5px,
-        #7cb342 5px,
-        #7cb342 10px
-    );
+    background: repeating-linear-gradient(90deg,
+            transparent,
+            transparent 5px,
+            #7cb342 5px,
+            #7cb342 10px);
 }
 
 /* Responsive */
@@ -480,40 +560,66 @@ body {
     .title {
         font-size: 2.5rem;
     }
-    
+
     .subtitle {
         font-size: 1rem;
     }
-    
+
     .garden {
         gap: 20px;
     }
-    
+
     .gerbera {
         width: 120px;
         height: 250px;
     }
-    
+
     .flower-head {
         width: 100px;
         height: 100px;
     }
-    
+
     .sun {
         width: 70px;
         height: 70px;
         right: 30px;
     }
-    
+
     .info-panel {
         padding: 20px;
     }
-    
+
     .info-panel h2 {
         font-size: 1.5rem;
     }
-    
+
     .info-panel p {
         font-size: 1rem;
     }
+}
+
+/* ── Botón de regreso ── */
+.btn-back {
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    z-index: 9999;
+    display: inline-block;
+    padding: 9px 20px;
+    background: rgba(45, 80, 22, 0.3);
+    color: #2d5016;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 30px;
+    border: 1px solid rgba(45, 80, 22, 0.4);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    transition: background 0.25s, transform 0.2s;
+}
+
+.btn-back:hover {
+    background: rgba(45, 80, 22, 0.5);
+    transform: translateX(-3px);
 }

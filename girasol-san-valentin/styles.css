@@ -19,7 +19,7 @@ body {
     border-radius: 35px;
     padding: 45px 55px;
     text-align: center;
-    box-shadow: 
+    box-shadow:
         0 25px 60px rgba(139, 69, 19, 0.15),
         0 10px 30px rgba(0, 0, 0, 0.08),
         inset 0 2px 4px rgba(255, 255, 255, 0.8);
@@ -45,8 +45,15 @@ body {
 }
 
 @keyframes gentleSway {
-    0%, 100% { transform: rotate(-2deg); }
-    50% { transform: rotate(2deg); }
+
+    0%,
+    100% {
+        transform: rotate(-2deg);
+    }
+
+    50% {
+        transform: rotate(2deg);
+    }
 }
 
 /* Cabeza de la flor - mucho más detallada */
@@ -67,26 +74,33 @@ body {
 }
 
 @keyframes petalBreath {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.02); }
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.02);
+    }
 }
 
 .petal {
     position: absolute;
     width: 48px;
     height: 18px;
-    background: linear-gradient(to right, 
-        #e65100 0%, 
-        #ff8c00 15%, 
-        #ffa726 35%, 
-        #ffd54f 60%, 
-        #ffeb3b 85%, 
-        #fff176 100%);
+    background: linear-gradient(to right,
+            #e65100 0%,
+            #ff8c00 15%,
+            #ffa726 35%,
+            #ffd54f 60%,
+            #ffeb3b 85%,
+            #fff176 100%);
     border-radius: 4px 55% 55% 4px;
     left: 50%;
     top: 50%;
     transform-origin: left center;
-    box-shadow: 
+    box-shadow:
         0 3px 5px rgba(0, 0, 0, 0.2),
         inset 0 -3px 6px rgba(0, 0, 0, 0.15),
         inset 0 3px 4px rgba(255, 255, 255, 0.3);
@@ -98,7 +112,7 @@ body {
     width: 100%;
     height: 35%;
     top: 0;
-    background: linear-gradient(180deg, rgba(255,255,255,0.4), transparent);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.4), transparent);
     border-radius: inherit;
 }
 
@@ -107,7 +121,7 @@ body {
     position: absolute;
     width: 80%;
     height: 1.5px;
-    background: linear-gradient(90deg, transparent, rgba(139,69,19,0.3), transparent);
+    background: linear-gradient(90deg, transparent, rgba(139, 69, 19, 0.3), transparent);
     top: 50%;
     left: 10%;
 }
@@ -117,19 +131,19 @@ body {
     position: absolute;
     width: 65px;
     height: 65px;
-    background: 
-        radial-gradient(circle at 35% 35%, 
-            #a0522d 0%, 
-            #8b4513 25%, 
-            #6d4c41 50%, 
-            #5d4037 75%, 
+    background:
+        radial-gradient(circle at 35% 35%,
+            #a0522d 0%,
+            #8b4513 25%,
+            #6d4c41 50%,
+            #5d4037 75%,
             #4e342e 100%);
     border-radius: 50%;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
-    box-shadow: 
+    box-shadow:
         inset 0 -8px 16px rgba(0, 0, 0, 0.4),
         inset 0 4px 8px rgba(255, 255, 255, 0.15),
         0 6px 15px rgba(0, 0, 0, 0.3);
@@ -143,7 +157,7 @@ body {
     height: 90%;
     top: 5%;
     left: 5%;
-    background: 
+    background:
         repeating-radial-gradient(circle at 50% 50%,
             transparent 0px,
             transparent 2px,
@@ -165,7 +179,7 @@ body {
 .eye {
     width: 11px;
     height: 14px;
-    background: 
+    background:
         radial-gradient(circle at 50% 40%, #1a1a1a, #000);
     border-radius: 50%;
     position: relative;
@@ -174,8 +188,17 @@ body {
 }
 
 @keyframes blink {
-    0%, 42%, 48%, 100% { transform: scaleY(1); }
-    45% { transform: scaleY(0.1); }
+
+    0%,
+    42%,
+    48%,
+    100% {
+        transform: scaleY(1);
+    }
+
+    45% {
+        transform: scaleY(0.1);
+    }
 }
 
 .pupil {
@@ -212,28 +235,33 @@ body {
     z-index: 5;
 }
 
-.blush.left { left: 8px; }
-.blush.right { right: 8px; }
+.blush.left {
+    left: 8px;
+}
+
+.blush.right {
+    right: 8px;
+}
 
 /* Tallo realista */
 .stem {
     position: absolute;
     width: 16px;
     height: 150px;
-    background: linear-gradient(90deg, 
-        #1b5e20 0%, 
-        #2e7d32 20%, 
-        #43a047 40%, 
-        #4caf50 50%, 
-        #43a047 60%, 
-        #2e7d32 80%, 
-        #1b5e20 100%);
+    background: linear-gradient(90deg,
+            #1b5e20 0%,
+            #2e7d32 20%,
+            #43a047 40%,
+            #4caf50 50%,
+            #43a047 60%,
+            #2e7d32 80%,
+            #1b5e20 100%);
     border-radius: 8px;
     top: 120px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
-    box-shadow: 
+    box-shadow:
         inset -4px 0 8px rgba(0, 0, 0, 0.25),
         inset 4px 0 8px rgba(255, 255, 255, 0.1),
         3px 0 10px rgba(0, 0, 0, 0.15);
@@ -245,10 +273,10 @@ body {
     width: 5px;
     height: 100%;
     left: 2px;
-    background: linear-gradient(180deg, 
-        rgba(255, 255, 255, 0.2) 0%, 
-        rgba(255, 255, 255, 0.08) 50%,
-        transparent 100%);
+    background: linear-gradient(180deg,
+            rgba(255, 255, 255, 0.2) 0%,
+            rgba(255, 255, 255, 0.08) 50%,
+            transparent 100%);
     border-radius: 3px;
 }
 
@@ -257,16 +285,16 @@ body {
     position: absolute;
     width: 55px;
     height: 28px;
-    background: linear-gradient(135deg, 
-        #1b5e20 0%, 
-        #2e7d32 25%, 
-        #43a047 50%, 
-        #2e7d32 75%, 
-        #1b5e20 100%);
+    background: linear-gradient(135deg,
+            #1b5e20 0%,
+            #2e7d32 25%,
+            #43a047 50%,
+            #2e7d32 75%,
+            #1b5e20 100%);
     border-radius: 55% 8px 55% 8px;
     top: 180px;
     z-index: 2;
-    box-shadow: 
+    box-shadow:
         inset 0 -4px 8px rgba(0, 0, 0, 0.25),
         inset 0 3px 5px rgba(255, 255, 255, 0.15),
         3px 4px 8px rgba(0, 0, 0, 0.2);
@@ -315,14 +343,14 @@ body {
 .pot-rim {
     width: 100px;
     height: 22px;
-    background: linear-gradient(180deg, 
-        #a0522d 0%, 
-        #8b4513 40%, 
-        #6d4c41 80%, 
-        #5d4037 100%);
+    background: linear-gradient(180deg,
+            #a0522d 0%,
+            #8b4513 40%,
+            #6d4c41 80%,
+            #5d4037 100%);
     border-radius: 6px 6px 0 0;
     margin: 0 auto;
-    box-shadow: 
+    box-shadow:
         inset 0 3px 6px rgba(255, 255, 255, 0.15),
         inset 0 -2px 4px rgba(0, 0, 0, 0.2);
 }
@@ -330,18 +358,18 @@ body {
 .pot-body {
     width: 90px;
     height: 65px;
-    background: linear-gradient(90deg, 
-        #6d4c41 0%, 
-        #8b4513 15%, 
-        #a0522d 35%, 
-        #cd853f 50%, 
-        #a0522d 65%, 
-        #8b4513 85%, 
-        #6d4c41 100%);
+    background: linear-gradient(90deg,
+            #6d4c41 0%,
+            #8b4513 15%,
+            #a0522d 35%,
+            #cd853f 50%,
+            #a0522d 65%,
+            #8b4513 85%,
+            #6d4c41 100%);
     border-radius: 0 0 18px 18px;
     margin: 0 auto;
     position: relative;
-    box-shadow: 
+    box-shadow:
         inset -10px 0 20px rgba(0, 0, 0, 0.25),
         inset 10px 0 20px rgba(255, 255, 255, 0.08),
         0 8px 20px rgba(0, 0, 0, 0.2);
@@ -350,7 +378,7 @@ body {
 .dirt {
     width: 75px;
     height: 16px;
-    background: 
+    background:
         radial-gradient(ellipse at 30% 50%, #4d3319, transparent 60%),
         radial-gradient(ellipse at 70% 50%, #4d3319, transparent 60%),
         linear-gradient(180deg, #3d2817, #2d1f12, #1a1509);
@@ -397,16 +425,18 @@ body {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
     transition: left 0.5s;
 }
 
-.btn:hover::before { left: 100%; }
+.btn:hover::before {
+    left: 100%;
+}
 
 .btn-yes {
     background: linear-gradient(135deg, #ff6b9d, #e91e63, #c2185b);
     color: white;
-    box-shadow: 
+    box-shadow:
         0 6px 20px rgba(233, 30, 99, 0.4),
         inset 0 2px 4px rgba(255, 255, 255, 0.2);
 }
@@ -433,7 +463,9 @@ body {
     text-shadow: 0 0 15px rgba(233, 30, 99, 0.4);
 }
 
-.response.show { opacity: 1; }
+.response.show {
+    opacity: 1;
+}
 
 /* ========== CORAZONES DE FONDO ========== */
 .hearts-bg {
@@ -455,10 +487,23 @@ body {
 }
 
 @keyframes floatHeart {
-    0% { transform: translateY(100vh) rotate(0deg) scale(0.5); opacity: 0; }
-    10% { opacity: 0.25; }
-    90% { opacity: 0.25; }
-    100% { transform: translateY(-100px) rotate(360deg) scale(1); opacity: 0; }
+    0% {
+        transform: translateY(100vh) rotate(0deg) scale(0.5);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0.25;
+    }
+
+    90% {
+        opacity: 0.25;
+    }
+
+    100% {
+        transform: translateY(-100px) rotate(360deg) scale(1);
+        opacity: 0;
+    }
 }
 
 /* Celebración */
@@ -467,6 +512,39 @@ body {
 }
 
 @keyframes celebrate {
-    0%, 100% { transform: rotate(-8deg) scale(1.08); }
-    50% { transform: rotate(8deg) scale(1.08); }
+
+    0%,
+    100% {
+        transform: rotate(-8deg) scale(1.08);
+    }
+
+    50% {
+        transform: rotate(8deg) scale(1.08);
+    }
+}
+
+/* ── Botón de regreso ── */
+.btn-back {
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    z-index: 9999;
+    display: inline-block;
+    padding: 9px 20px;
+    background: rgba(139, 69, 19, 0.15);
+    color: #5d4037;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 30px;
+    border: 1px solid rgba(139, 69, 19, 0.3);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: background 0.25s, transform 0.2s;
+}
+
+.btn-back:hover {
+    background: rgba(139, 69, 19, 0.25);
+    transform: translateX(-3px);
 }

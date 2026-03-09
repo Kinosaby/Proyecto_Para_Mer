@@ -611,3 +611,29 @@ body {
         padding: 20px 40px;
     }
 }
+
+/* ── Botón de regreso ── */
+.btn-back {
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    z-index: 9999;
+    display: inline-block;
+    padding: 9px 20px;
+    background: rgba(255, 255, 255, 0.25);
+    color: white;
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: background 0.25s, transform 0.2s;
+}
+.btn-back:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: translateX(-3px);
+}
+

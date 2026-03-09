@@ -25,6 +25,7 @@ body {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -40,9 +41,12 @@ body {
 }
 
 @keyframes float {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0px);
     }
+
     50% {
         transform: translateY(-20px);
     }
@@ -80,12 +84,16 @@ body {
 }
 
 @keyframes wiggleEar {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: rotate(0deg);
     }
+
     25% {
         transform: rotate(-5deg);
     }
+
     75% {
         transform: rotate(5deg);
     }
@@ -132,12 +140,18 @@ body {
 }
 
 @keyframes blink {
-    0%, 88%, 100% {
+
+    0%,
+    88%,
+    100% {
         height: 60px;
     }
-    92%, 96% {
+
+    92%,
+    96% {
         height: 8px;
     }
+
     94% {
         height: 60px;
     }
@@ -157,15 +171,21 @@ body {
 }
 
 @keyframes lookAround {
-    0%, 20%, 100% {
+
+    0%,
+    20%,
+    100% {
         transform: translate(-50%, -50%);
     }
+
     40% {
         transform: translate(-30%, -50%);
     }
+
     60% {
         transform: translate(-70%, -50%);
     }
+
     80% {
         transform: translate(-50%, -30%);
     }
@@ -195,10 +215,13 @@ body {
 }
 
 @keyframes twinkle {
-    0%, 100% {
+
+    0%,
+    100% {
         opacity: 1;
         transform: scale(1);
     }
+
     50% {
         opacity: 0.5;
         transform: scale(0.8);
@@ -227,10 +250,13 @@ body {
 }
 
 @keyframes starTwinkle {
-    0%, 100% {
+
+    0%,
+    100% {
         opacity: 1;
         transform: scale(1) rotate(0deg);
     }
+
     50% {
         opacity: 0.6;
         transform: scale(1.2) rotate(180deg);
@@ -300,10 +326,13 @@ body {
 }
 
 @keyframes blushPulse {
-    0%, 100% {
+
+    0%,
+    100% {
         opacity: 0.7;
         transform: scale(1);
     }
+
     50% {
         opacity: 1;
         transform: scale(1.1);
@@ -357,18 +386,24 @@ body {
 }
 
 @keyframes waveLeft {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: rotate(-30deg);
     }
+
     50% {
         transform: rotate(-50deg);
     }
 }
 
 @keyframes waveRight {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: rotate(30deg);
     }
+
     50% {
         transform: rotate(50deg);
     }
@@ -394,9 +429,12 @@ body {
 }
 
 @keyframes titleBounce {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.05);
     }
@@ -454,10 +492,12 @@ body {
         opacity: 0;
         transform: translateY(0) scale(0.5);
     }
+
     50% {
         opacity: 1;
         transform: translateY(-30px) scale(1);
     }
+
     100% {
         opacity: 0;
         transform: translateY(-60px) scale(0.5);
@@ -497,10 +537,12 @@ body {
         opacity: 0;
         transform: translateY(0) rotate(0deg) scale(0.5);
     }
+
     50% {
         opacity: 1;
         transform: translateY(-40px) rotate(180deg) scale(1);
     }
+
     100% {
         opacity: 0;
         transform: translateY(-80px) rotate(360deg) scale(0.5);
@@ -527,12 +569,16 @@ body {
 }
 
 @keyframes sway {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: rotate(0deg);
     }
+
     25% {
         transform: rotate(5deg);
     }
+
     75% {
         transform: rotate(-5deg);
     }
@@ -543,8 +589,34 @@ body {
     .panda {
         transform: scale(0.8);
     }
-    
+
     .title {
         font-size: 1.8rem;
     }
+}
+
+/* ── Botón de regreso ── */
+.btn-back {
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    z-index: 9999;
+    display: inline-block;
+    padding: 9px 20px;
+    background: rgba(255, 255, 255, 0.25);
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: background 0.25s, transform 0.2s;
+}
+
+.btn-back:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: translateX(-3px);
 }

@@ -48,16 +48,19 @@ body {
     border-radius: 50%;
     top: 25px;
     left: 30px;
-    box-shadow: 
+    box-shadow:
         20px 10px 0 5px rgba(200, 200, 220, 0.3),
         10px 35px 0 3px rgba(200, 200, 220, 0.4);
 }
 
 @keyframes moonGlow {
-    0%, 100% { 
+
+    0%,
+    100% {
         box-shadow: 0 0 60px rgba(248, 248, 255, 0.8), 0 0 100px rgba(248, 248, 255, 0.4);
     }
-    50% { 
+
+    50% {
         box-shadow: 0 0 80px rgba(248, 248, 255, 1), 0 0 120px rgba(248, 248, 255, 0.6);
     }
 }
@@ -70,7 +73,8 @@ body {
     animation: cloudFloat 40s linear infinite;
 }
 
-.cloud::before, .cloud::after {
+.cloud::before,
+.cloud::after {
     content: '';
     position: absolute;
     background: rgba(100, 120, 150, 0.3);
@@ -143,8 +147,13 @@ body {
 }
 
 @keyframes cloudFloat {
-    from { transform: translateX(0); }
-    to { transform: translateX(calc(100vw + 200px)); }
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(100vw + 200px));
+    }
 }
 
 .butterfly {
@@ -166,10 +175,23 @@ body {
 }
 
 @keyframes butterflyFly {
-    0%, 100% { transform: translate(0, 0); }
-    25% { transform: translate(100px, -30px); }
-    50% { transform: translate(200px, 20px); }
-    75% { transform: translate(100px, 40px); }
+
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(100px, -30px);
+    }
+
+    50% {
+        transform: translate(200px, 20px);
+    }
+
+    75% {
+        transform: translate(100px, 40px);
+    }
 }
 
 /* Estrellas */
@@ -241,9 +263,12 @@ body {
 }
 
 @keyframes starsGlow {
-    0%, 100% {
+
+    0%,
+    100% {
         opacity: 0.7;
     }
+
     50% {
         opacity: 1;
     }
@@ -266,8 +291,15 @@ body {
 }
 
 @keyframes titleFloat {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
 }
 
 .main-subtitle {
@@ -392,8 +424,15 @@ body {
 }
 
 @keyframes roseBloom {
-    0%, 100% { transform: translateX(-50%) scale(1); }
-    50% { transform: translateX(-50%) scale(1.05); }
+
+    0%,
+    100% {
+        transform: translateX(-50%) scale(1);
+    }
+
+    50% {
+        transform: translateX(-50%) scale(1.05);
+    }
 }
 
 /* TULIPANES */
@@ -402,10 +441,25 @@ body {
     height: 140px;
 }
 
-.tulip-pink::before { content: '🌷'; color: #FF69B4; }
-.tulip-red::before { content: '🌷'; color: #DC143C; }
-.tulip-yellow::before { content: '🌷'; color: #FFD700; }
-.tulip-purple::before { content: '🌷'; color: #9370DB; }
+.tulip-pink::before {
+    content: '🌷';
+    color: #FF69B4;
+}
+
+.tulip-red::before {
+    content: '🌷';
+    color: #DC143C;
+}
+
+.tulip-yellow::before {
+    content: '🌷';
+    color: #FFD700;
+}
+
+.tulip-purple::before {
+    content: '🌷';
+    color: #9370DB;
+}
 
 .tulip::before {
     font-size: 4.5rem;
@@ -418,8 +472,15 @@ body {
 }
 
 @keyframes tulipSway {
-    0%, 100% { transform: translateX(-50%) rotate(0deg); }
-    50% { transform: translateX(-50%) rotate(5deg); }
+
+    0%,
+    100% {
+        transform: translateX(-50%) rotate(0deg);
+    }
+
+    50% {
+        transform: translateX(-50%) rotate(5deg);
+    }
 }
 
 /* LIRIOS */
@@ -440,8 +501,15 @@ body {
 }
 
 @keyframes lilyGlow {
-    0%, 100% { filter: drop-shadow(0 5px 15px rgba(255, 182, 193, 0.5)); }
-    50% { filter: drop-shadow(0 5px 25px rgba(255, 182, 193, 0.8)); }
+
+    0%,
+    100% {
+        filter: drop-shadow(0 5px 15px rgba(255, 182, 193, 0.5));
+    }
+
+    50% {
+        filter: drop-shadow(0 5px 25px rgba(255, 182, 193, 0.8));
+    }
 }
 
 /* VIOLETAS */
@@ -466,11 +534,30 @@ body {
     height: 130px;
 }
 
-.gerbera-pink::before { content: '🌼'; filter: drop-shadow(0 4px 12px rgba(255, 105, 180, 0.5)); }
-.gerbera-orange::before { content: '🌼'; filter: drop-shadow(0 4px 12px rgba(255, 140, 0, 0.5)); }
-.gerbera-yellow::before { content: '🌼'; filter: drop-shadow(0 4px 12px rgba(255, 215, 0, 0.5)); }
-.gerbera-red::before { content: '🌼'; filter: drop-shadow(0 4px 12px rgba(220, 20, 60, 0.5)); }
-.gerbera-purple::before { content: '🌼'; filter: drop-shadow(0 4px 12px rgba(147, 112, 219, 0.5)); }
+.gerbera-pink::before {
+    content: '🌼';
+    filter: drop-shadow(0 4px 12px rgba(255, 105, 180, 0.5));
+}
+
+.gerbera-orange::before {
+    content: '🌼';
+    filter: drop-shadow(0 4px 12px rgba(255, 140, 0, 0.5));
+}
+
+.gerbera-yellow::before {
+    content: '🌼';
+    filter: drop-shadow(0 4px 12px rgba(255, 215, 0, 0.5));
+}
+
+.gerbera-red::before {
+    content: '🌼';
+    filter: drop-shadow(0 4px 12px rgba(220, 20, 60, 0.5));
+}
+
+.gerbera-purple::before {
+    content: '🌼';
+    filter: drop-shadow(0 4px 12px rgba(147, 112, 219, 0.5));
+}
 
 .gerbera::before {
     font-size: 4.5rem;
@@ -482,13 +569,27 @@ body {
 }
 
 @keyframes gerberaRotate {
-    0%, 100% { transform: translateX(-50%) rotate(0deg); }
-    50% { transform: translateX(-50%) rotate(10deg); }
+
+    0%,
+    100% {
+        transform: translateX(-50%) rotate(0deg);
+    }
+
+    50% {
+        transform: translateX(-50%) rotate(10deg);
+    }
 }
 
 @keyframes gentleSway {
-    0%, 100% { transform: rotate(0deg); }
-    50% { transform: rotate(2deg); }
+
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(2deg);
+    }
 }
 
 /* Frases de amor */
@@ -529,8 +630,15 @@ body {
 }
 
 @keyframes heartPulse {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.1); }
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
 }
 
 .final-title {
@@ -565,9 +673,17 @@ body {
 }
 
 @keyframes flowerClick {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.3); }
-    100% { transform: scale(1); }
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.3);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 /* Responsive */
@@ -575,56 +691,84 @@ body {
     .main-title {
         font-size: 2.5rem;
     }
-    
+
     .main-subtitle {
         font-size: 1.2rem;
     }
-    
+
     .section-title {
         font-size: 2rem;
     }
-    
+
     .section-subtitle {
         font-size: 1.1rem;
     }
-    
+
     .poem-card {
         padding: 20px;
     }
-    
+
     .poem-text {
         font-size: 1.1rem;
     }
-    
+
     .flowers-container {
         gap: 15px;
     }
-    
-    .rose, .lily, .gerbera {
+
+    .rose,
+    .lily,
+    .gerbera {
         transform: scale(0.8);
     }
-    
+
     .tulip {
         transform: scale(0.7);
     }
-    
+
     .violet {
         transform: scale(0.7);
     }
-    
+
     .love-phrase p {
         font-size: 1.1rem;
     }
-    
+
     .final-title {
         font-size: 2rem;
     }
-    
+
     .final-text {
         font-size: 1.3rem;
     }
-    
+
     .big-heart {
         font-size: 5rem;
     }
+}
+
+/* ── Botón de regreso ── */
+.btn-back {
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    z-index: 9999;
+    display: inline-block;
+    padding: 9px 20px;
+    background: rgba(255, 255, 255, 0.08);
+    color: #f4e4c1;
+    font-family: 'Georgia', serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 30px;
+    border: 1px solid rgba(244, 228, 193, 0.35);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: background 0.25s, transform 0.2s;
+}
+
+.btn-back:hover {
+    background: rgba(255, 255, 255, 0.18);
+    transform: translateX(-3px);
 }

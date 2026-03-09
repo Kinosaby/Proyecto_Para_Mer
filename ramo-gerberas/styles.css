@@ -19,7 +19,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(ellipse at 30% 20%, rgba(255,107,157,0.1), transparent 50%);
+    background: radial-gradient(ellipse at 30% 20%, rgba(255, 107, 157, 0.1), transparent 50%);
     z-index: 0;
 }
 
@@ -35,15 +35,26 @@ body {
     position: absolute;
     width: 6px;
     height: 6px;
-    background: rgba(255,182,193,0.6);
+    background: rgba(255, 182, 193, 0.6);
     border-radius: 50%;
     animation: rise 12s infinite;
 }
 
 @keyframes rise {
-    0% { transform: translateY(100vh); opacity: 0; }
-    10%,90% { opacity: 0.8; }
-    100% { transform: translateY(-50px); opacity: 0; }
+    0% {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+
+    10%,
+    90% {
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
 }
 
 .container {
@@ -57,12 +68,12 @@ body {
     font-family: 'Dancing Script', cursive;
     font-size: 3rem;
     color: white;
-    text-shadow: 0 0 20px rgba(255,107,157,0.8);
+    text-shadow: 0 0 20px rgba(255, 107, 157, 0.8);
     margin-bottom: 5px;
 }
 
 .subtitle {
-    color: rgba(255,255,255,0.7);
+    color: rgba(255, 255, 255, 0.7);
     font-size: 1rem;
     margin-bottom: 20px;
 }
@@ -82,8 +93,15 @@ body {
 }
 
 @keyframes sway {
-    0%,100% { transform: rotate(var(--r, 0deg)); }
-    50% { transform: rotate(calc(var(--r, 0deg) + 3deg)); }
+
+    0%,
+    100% {
+        transform: rotate(var(--r, 0deg));
+    }
+
+    50% {
+        transform: rotate(calc(var(--r, 0deg) + 3deg));
+    }
 }
 
 .stem {
@@ -102,8 +120,17 @@ body {
     border-radius: 50% 0 50% 0;
 }
 
-.leaf-l { left: -28px; top: 100px; transform: rotate(-40deg); }
-.leaf-r { right: -28px; top: 70px; transform: rotate(40deg) scaleX(-1); }
+.leaf-l {
+    left: -28px;
+    top: 100px;
+    transform: rotate(-40deg);
+}
+
+.leaf-r {
+    right: -28px;
+    top: 70px;
+    transform: rotate(40deg) scaleX(-1);
+}
 
 .head {
     width: 110px;
@@ -121,7 +148,11 @@ body {
     animation: spin 90s linear infinite;
 }
 
-@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
 
 .petal {
     position: absolute;
@@ -177,37 +208,101 @@ body {
 }
 
 /* COLORES */
-.pink .petal { background: linear-gradient(to right, #e91e63, #f48fb1); }
-.pink .petal-m { background: linear-gradient(to right, #f48fb1, #fce4ec); }
-.pink .petal-s { background: #fce4ec; }
+.pink .petal {
+    background: linear-gradient(to right, #e91e63, #f48fb1);
+}
 
-.orange .petal { background: linear-gradient(to right, #ff5722, #ff8a65); }
-.orange .petal-m { background: linear-gradient(to right, #ff8a65, #ffccbc); }
-.orange .petal-s { background: #ffccbc; }
+.pink .petal-m {
+    background: linear-gradient(to right, #f48fb1, #fce4ec);
+}
 
-.yellow .petal { background: linear-gradient(to right, #ffc107, #ffeb3b); }
-.yellow .petal-m { background: linear-gradient(to right, #ffeb3b, #fff9c4); }
-.yellow .petal-s { background: #fff9c4; }
+.pink .petal-s {
+    background: #fce4ec;
+}
 
-.red .petal { background: linear-gradient(to right, #c62828, #ef5350); }
-.red .petal-m { background: linear-gradient(to right, #ef5350, #ffcdd2); }
-.red .petal-s { background: #ffcdd2; }
+.orange .petal {
+    background: linear-gradient(to right, #ff5722, #ff8a65);
+}
 
-.coral .petal { background: linear-gradient(to right, #ff7043, #ffab91); }
-.coral .petal-m { background: linear-gradient(to right, #ffab91, #fbe9e7); }
-.coral .petal-s { background: #fbe9e7; }
+.orange .petal-m {
+    background: linear-gradient(to right, #ff8a65, #ffccbc);
+}
 
-.magenta .petal { background: linear-gradient(to right, #d81b60, #f06292); }
-.magenta .petal-m { background: linear-gradient(to right, #f06292, #f8bbd9); }
-.magenta .petal-s { background: #f8bbd9; }
+.orange .petal-s {
+    background: #ffccbc;
+}
 
-.white .petal { background: linear-gradient(to right, #e0e0e0, #fafafa); }
-.white .petal-m { background: #fafafa; }
-.white .petal-s { background: #ffffff; }
+.yellow .petal {
+    background: linear-gradient(to right, #ffc107, #ffeb3b);
+}
 
-.lavender .petal { background: linear-gradient(to right, #9c27b0, #ce93d8); }
-.lavender .petal-m { background: linear-gradient(to right, #ce93d8, #f3e5f5); }
-.lavender .petal-s { background: #f3e5f5; }
+.yellow .petal-m {
+    background: linear-gradient(to right, #ffeb3b, #fff9c4);
+}
+
+.yellow .petal-s {
+    background: #fff9c4;
+}
+
+.red .petal {
+    background: linear-gradient(to right, #c62828, #ef5350);
+}
+
+.red .petal-m {
+    background: linear-gradient(to right, #ef5350, #ffcdd2);
+}
+
+.red .petal-s {
+    background: #ffcdd2;
+}
+
+.coral .petal {
+    background: linear-gradient(to right, #ff7043, #ffab91);
+}
+
+.coral .petal-m {
+    background: linear-gradient(to right, #ffab91, #fbe9e7);
+}
+
+.coral .petal-s {
+    background: #fbe9e7;
+}
+
+.magenta .petal {
+    background: linear-gradient(to right, #d81b60, #f06292);
+}
+
+.magenta .petal-m {
+    background: linear-gradient(to right, #f06292, #f8bbd9);
+}
+
+.magenta .petal-s {
+    background: #f8bbd9;
+}
+
+.white .petal {
+    background: linear-gradient(to right, #e0e0e0, #fafafa);
+}
+
+.white .petal-m {
+    background: #fafafa;
+}
+
+.white .petal-s {
+    background: #ffffff;
+}
+
+.lavender .petal {
+    background: linear-gradient(to right, #9c27b0, #ce93d8);
+}
+
+.lavender .petal-m {
+    background: linear-gradient(to right, #ce93d8, #f3e5f5);
+}
+
+.lavender .petal-s {
+    background: #f3e5f5;
+}
 
 /* CONTROLES */
 .controls {
@@ -226,19 +321,58 @@ body {
     border-radius: 30px;
     cursor: pointer;
     transition: transform 0.2s;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-.btn:hover { transform: translateY(-3px) scale(1.05); }
+.btn:hover {
+    transform: translateY(-3px) scale(1.05);
+}
 
-.btn-add { background: linear-gradient(135deg, #ff6b9d, #c44569); color: white; }
-.btn-shuffle { background: linear-gradient(135deg, #ffd54f, #ff8f00); color: #333; }
-.btn-reset { background: linear-gradient(135deg, #64b5f6, #1976d2); color: white; }
+.btn-add {
+    background: linear-gradient(135deg, #ff6b9d, #c44569);
+    color: white;
+}
+
+.btn-shuffle {
+    background: linear-gradient(135deg, #ffd54f, #ff8f00);
+    color: #333;
+}
+
+.btn-reset {
+    background: linear-gradient(135deg, #64b5f6, #1976d2);
+    color: white;
+}
 
 .message {
     font-family: 'Dancing Script', cursive;
     font-size: 1.4rem;
-    color: rgba(255,255,255,0.9);
+    color: rgba(255, 255, 255, 0.9);
     margin-top: 20px;
-    text-shadow: 0 0 15px rgba(255,107,157,0.5);
+    text-shadow: 0 0 15px rgba(255, 107, 157, 0.5);
+}
+
+/* ── Botón de regreso ── */
+.btn-back {
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    z-index: 9999;
+    display: inline-block;
+    padding: 9px 20px;
+    background: rgba(255, 107, 157, 0.15);
+    color: rgba(255, 182, 193, 0.95);
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 107, 157, 0.35);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: background 0.25s, transform 0.2s;
+}
+
+.btn-back:hover {
+    background: rgba(255, 107, 157, 0.3);
+    transform: translateX(-3px);
 }
