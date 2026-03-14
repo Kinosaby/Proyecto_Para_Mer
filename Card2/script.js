@@ -67,6 +67,26 @@ document.getElementById('card').addEventListener('click', e => {
   }
 });
 
+// ── PDF EXPORT ──
+document.getElementById('downloadPdf').addEventListener('click', () => {
+  const element = document.getElementById('card');
+  const opt = {
+    margin:       [10, 10],
+    filename:     'Viernes13_Piojito.pdf',
+    image:        { type: 'jpeg', quality: 0.98 },
+    html2canvas:  { 
+      scale: 2, 
+      useCORS: true,
+      backgroundColor: '#0a0608'
+    },
+    jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
+  };
+
+  // Temporarily remove hover animations during export if needed, 
+  // but html2canvas usually captures the static state.
+  html2pdf().set(opt).from(element).save();
+});
+
 // inject keyframe (already handled in CSS, but keeping JS logic if needed for dynamic injection)
 // const st = document.createElement('style');
 // st.textContent=`@keyframes sparkBurst{0%{opacity:1;transform:scale(0.2) translateY(0)}100%{opacity:0;transform:scale(2) translateY(-50px)}}`;

@@ -611,39 +611,62 @@
       .promise-box {
         font-size: 15.5px
       }
-    }
-
-    /* ── Botón de regreso ── */
-    .btn-back {
+    }    /* ── Navegación y Controles ── */
+    .nav-controls {
       position: fixed;
       top: 20px;
       left: 20px;
       z-index: 9999;
+      display: flex;
+      gap: 12px;
+    }
+
+    .btn-back, .btn-pdf {
       display: inline-block;
       padding: 10px 22px;
-      background: rgba(253, 243, 231, 0.4);
-      color: var(--terracotta);
+      backdrop-filter: blur(8px);
+      border-radius: 12px;
       font-family: 'Nunito', sans-serif;
-      font-size: 0.95rem;
-      font-weight: 700;
+      font-size: 0.9rem;
+      font-weight: 600;
       text-decoration: none;
-      border-radius: 50px;
-      border: 1.5px solid rgba(212, 101, 74, 0.25);
-      backdrop-filter: blur(10px);
-      box-shadow: 0 4px 15px rgba(46, 31, 20, 0.1);
-      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: 0 4px 6px rgba(46, 31, 20, 0.05);
+      border: 1px solid rgba(212, 101, 74, 0.2);
+    }
+
+    .btn-back {
+      background: rgba(255, 255, 255, 0.7);
+      color: #d4654a;
     }
 
     .btn-back:hover {
-      background: rgba(212, 101, 74, 0.1);
+      background: rgba(255, 255, 255, 0.9);
       transform: translateX(-5px) scale(1.02);
       box-shadow: 0 6px 20px rgba(212, 101, 74, 0.15);
     }
+
+    .btn-pdf {
+      background: rgba(212, 101, 74, 0.15);
+      color: #d4654a;
+      cursor: pointer;
+    }
+
+    .btn-pdf:hover {
+      background: #d4654a;
+      color: white;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(212, 101, 74, 0.2);
+    }
   </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 </head>
 
 <body>
-  <a href="../?v=3" class="btn-back">← Volver</a>
+  <div class="nav-controls">
+    <a href="../?v=3" class="btn-back">← Volver</a>
+    <button id="downloadPdf" class="btn-pdf">📄 PDF</button>
+  </div>
 
   <div class="bg-shape bg-shape-1"></div>
   <div class="bg-shape bg-shape-2"></div>
@@ -926,6 +949,27 @@
         document.body.appendChild(s);
         setTimeout(() => s.remove(), 900);
       }
+    });
+  </script>
+
+  <script>
+    // ── PDF EXPORT ──
+    document.getElementById('downloadPdf').addEventListener('click', () => {
+      // Usamos el .card que es lo que queremos exportar
+      const element = document.querySelector('.card');
+      const opt = {
+        margin:       [10, 10],
+        filename:     'Para_Piojito_8M.pdf',
+        image:        { type: 'jpeg', quality: 0.98 },
+        html2canvas:  { 
+          scale: 2, 
+          useCORS: true,
+          backgroundColor: '#faf6f3' // Color de fondo de la carta
+        },
+        jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
+      };
+
+      html2pdf().set(opt).from(element).save();
     });
   </script>
 </body>
