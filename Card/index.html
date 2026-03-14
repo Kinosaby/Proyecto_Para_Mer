@@ -955,21 +955,37 @@
   <script>
     // ── PDF EXPORT ──
     document.getElementById('downloadPdf').addEventListener('click', () => {
-      // Usamos el .card que es lo que queremos exportar
       const element = document.querySelector('.card');
+      const titleSpan = document.querySelector('.banner-title span');
+      
+      // Fix para background-clip: text (no soportado por html2canvas)
+      if (titleSpan) {
+        titleSpan.style.webkitTextFillColor = '#ffffff';
+        titleSpan.style.color = '#ffffff';
+      }
+
       const opt = {
-        margin:       [10, 10],
+        margin:       0,
         filename:     'Para_Piojito_8M.pdf',
         image:        { type: 'jpeg', quality: 0.98 },
         html2canvas:  { 
-          scale: 2, 
-          useCORS: true,
-          backgroundColor: '#faf6f3' // Color de fondo de la carta
+          scale: 3, 
+          useCORS: true, 
+          letterRendering: true,
+          scrollY: 0,
+          scrollX: 0,
+          windowWidth: document.documentElement.offsetWidth
         },
-        jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
+        jsPDF:        { unit: 'pt', format: 'letter', orientation: 'portrait' },
+        pagebreak:    { mode: 'avoid-all' }
       };
 
-      html2pdf().set(opt).from(element).save();
+      html2pdf().set(opt).from(element).toPdf().get('pdf').then((pdf) => {
+        // Restauramos los estilos originales tras generar el PDF
+        if (titleSpan) {
+          titleSpan.style.webkitTextFillColor = 'transparent';
+        }
+      }).save();
     });
   </script>
 </body>

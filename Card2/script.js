@@ -71,19 +71,20 @@ document.getElementById('card').addEventListener('click', e => {
 document.getElementById('downloadPdf').addEventListener('click', () => {
   const element = document.getElementById('card');
   const opt = {
-    margin:       [10, 10],
+    margin:       0,
     filename:     'Viernes13_Piojito.pdf',
     image:        { type: 'jpeg', quality: 0.98 },
     html2canvas:  { 
-      scale: 2, 
+      scale: 3, 
       useCORS: true,
-      backgroundColor: '#0a0608'
+      backgroundColor: '#0a0608',
+      scrollY: 0,
+      windowWidth: document.documentElement.offsetWidth
     },
-    jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
+    jsPDF:        { unit: 'pt', format: 'letter', orientation: 'portrait' },
+    pagebreak:    { mode: 'avoid-all' }
   };
 
-  // Temporarily remove hover animations during export if needed, 
-  // but html2canvas usually captures the static state.
   html2pdf().set(opt).from(element).save();
 });
 
