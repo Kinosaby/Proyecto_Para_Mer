@@ -614,49 +614,56 @@
     }    /* ── Navegación y Controles ── */
     .nav-controls {
       position: fixed;
-      top: 20px;
-      left: 20px;
+      top: 25px;
+      left: 25px;
       z-index: 9999;
       display: flex;
-      gap: 12px;
+      align-items: center;
+      gap: 14px;
     }
 
     .btn-back, .btn-pdf {
-      display: inline-block;
-      padding: 10px 22px;
-      backdrop-filter: blur(8px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 24px;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
       border-radius: 12px;
       font-family: 'Nunito', sans-serif;
-      font-size: 0.9rem;
-      font-weight: 600;
+      font-size: 0.85rem;
+      font-weight: 700;
       text-decoration: none;
-      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-      box-shadow: 0 4px 6px rgba(46, 31, 20, 0.05);
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: 0 4px 15px rgba(46, 31, 20, 0.08);
       border: 1px solid rgba(212, 101, 74, 0.2);
+      cursor: pointer;
     }
 
     .btn-back {
-      background: rgba(255, 255, 255, 0.7);
+      background: rgba(255, 255, 255, 0.8);
       color: #d4654a;
     }
 
     .btn-back:hover {
-      background: rgba(255, 255, 255, 0.9);
-      transform: translateX(-5px) scale(1.02);
+      background: rgba(255, 255, 255, 1);
+      transform: translateX(-4px);
       box-shadow: 0 6px 20px rgba(212, 101, 74, 0.15);
     }
 
     .btn-pdf {
       background: rgba(212, 101, 74, 0.15);
       color: #d4654a;
-      cursor: pointer;
     }
 
     .btn-pdf:hover {
       background: #d4654a;
       color: white;
-      transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(212, 101, 74, 0.2);
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(212, 101, 74, 0.25);
     }
   </style>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>

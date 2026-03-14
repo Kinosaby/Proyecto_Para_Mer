@@ -280,49 +280,57 @@ html, body {
 /* ── Navegación y Controles ── */
 .nav-controls {
     position: fixed;
-    top: 20px;
-    left: 20px;
+    top: 25px;
+    left: 25px;
     z-index: 9999;
     display: flex;
-    gap: 12px;
+    align-items: center;
+    gap: 14px;
 }
 
 .btn-back, .btn-pdf {
-    display: inline-block;
-    padding: 10px 22px;
-    backdrop-filter: blur(10px);
-    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 24px;
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-radius: 8px;
     font-family: 'Cinzel', serif;
-    font-size: 0.9rem;
-    font-weight: 600;
+    font-size: 0.85rem;
+    font-weight: 700;
     text-decoration: none;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-    border: 1px solid rgba(201, 144, 58, 0.3);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(201, 144, 58, 0.25);
+    cursor: pointer;
 }
 
 .btn-back {
-    background: rgba(18, 13, 16, 0.4);
+    background: rgba(18, 13, 16, 0.6);
     color: var(--gold-lt);
 }
 
 .btn-back:hover {
-    background: rgba(192, 37, 58, 0.15);
+    background: rgba(192, 37, 58, 0.1);
     border-color: var(--red);
     color: var(--cream);
-    transform: translateX(-5px);
+    transform: translateX(-4px);
+    box-shadow: 0 8px 25px rgba(192, 37, 58, 0.2);
 }
 
 .btn-pdf {
-    background: rgba(192, 37, 58, 0.3);
+    background: rgba(192, 37, 58, 0.25);
     color: var(--cream);
-    border-color: rgba(192, 37, 58, 0.5);
-    cursor: pointer;
+    border-color: rgba(192, 37, 58, 0.4);
 }
 
 .btn-pdf:hover {
     background: var(--red);
     border-color: var(--red-glow);
-    box-shadow: 0 0 15px var(--red-glow);
-    transform: translateY(-2px);
+    box-shadow: 0 0 20px var(--red-glow);
+    transform: translateY(-3px);
 }
