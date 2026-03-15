@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Una Galaxia para Piojito 🌌</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400;1,600&family=Sacramento&family=Cinzel:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Botón de regreso -->
+  <a href="../?v=4" class="btn-back">← Volver</a>
+
+  <!-- Custom cursor -->
+  <div id="cursor">
+    <svg viewBox="0 0 20 20" fill="none">
+      <circle cx="10" cy="10" r="4" fill="rgba(255,255,255,0.9)"/>
+      <line x1="10" y1="0"  x2="10" y2="6"  stroke="rgba(255,255,255,.5)" stroke-width="1"/>
+      <line x1="10" y1="14" x2="10" y2="20" stroke="rgba(255,255,255,.5)" stroke-width="1"/>
+      <line x1="0"  y1="10" x2="6"  y2="10" stroke="rgba(255,255,255,.5)" stroke-width="1"/>
+      <line x1="14" y1="10" x2="20" y2="10" stroke="rgba(255,255,255,.5)" stroke-width="1"/>
+    </svg>
+  </div>
+
+  <!-- Nebula -->
+  <div class="nebula nb1"></div>
+  <div class="nebula nb2"></div>
+  <div class="nebula nb3"></div>
+
+  <!-- Galaxy canvas -->
+  <canvas id="galaxy"></canvas>
+
+  <!-- Intro -->
+  <div id="intro">
+    <div class="intro-title">Una Galaxia para Piojito</div>
+    <div class="intro-sub">Hay 12 estrellas especiales esperándote · Encuéntralas todas ✨</div>
+  </div>
+
+  <!-- HUD -->
+  <div id="hud">
+    <div class="hud-label">Estrellas descubiertas</div>
+    <div class="hud-dots" id="hud-dots"></div>
+  </div>
+
+  <!-- Message modal -->
+  <div id="modal-overlay">
+    <div id="modal">
+      <svg class="modal-corner mc-tl" viewBox="0 0 32 32" fill="none">
+        <path d="M2 30 L2 2 L30 2" stroke="#c8923a" stroke-width="1" opacity=".4"/>
+        <path d="M2 2 L10 2 M2 2 L2 10" stroke="#c8923a" stroke-width="1.5" opacity=".7"/>
+      </svg>
+      <svg class="modal-corner mc-tr" viewBox="0 0 32 32" fill="none">
+        <path d="M2 30 L2 2 L30 2" stroke="#c8923a" stroke-width="1" opacity=".4"/>
+        <path d="M2 2 L10 2 M2 2 L2 10" stroke="#c8923a" stroke-width="1.5" opacity=".7"/>
+      </svg>
+      <svg class="modal-corner mc-bl" viewBox="0 0 32 32" fill="none">
+        <path d="M2 30 L2 2 L30 2" stroke="#c8923a" stroke-width="1" opacity=".4"/>
+        <path d="M2 2 L10 2 M2 2 L2 10" stroke="#c8923a" stroke-width="1.5" opacity=".7"/>
+      </svg>
+      <svg class="modal-corner mc-br" viewBox="0 0 32 32" fill="none">
+        <path d="M2 30 L2 2 L30 2" stroke="#c8923a" stroke-width="1" opacity=".4"/>
+        <path d="M2 2 L10 2 M2 2 L2 10" stroke="#c8923a" stroke-width="1.5" opacity=".7"/>
+      </svg>
+      <div id="modal-star-num"></div>
+      <div id="modal-icon"></div>
+      <div id="modal-msg"></div>
+      <button id="modal-close">Cerrar ✦</button>
+    </div>
+  </div>
+
+  <!-- Final modal -->
+  <div id="final-overlay">
+    <div id="final-modal">
+      <div class="final-title">Lo encontraste todo</div>
+      <div class="final-sub">
+        Cada estrella de esta galaxia<br>
+        fue puesta ahí pensando en ti,<br>
+        <em>Piojito</em>.<br><br>
+        Y así como no puedes contar<br>
+        todas las estrellas del universo —<br>
+        tampoco podrías contar<br>
+        las veces que pienso en ti.
+      </div>
+      <button class="final-close" onclick="document.getElementById('final-overlay').classList.remove('open')">
+        Volver a la galaxia ✦
+      </button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
