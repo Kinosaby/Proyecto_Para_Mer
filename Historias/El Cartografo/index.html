@@ -14,7 +14,7 @@
     *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
 
     body {
-      width:100vw; height:100vh; overflow:hidden;
+      width:100vw; min-height:100vh; overflow-x:hidden; overflow-y:auto;
       background:
         radial-gradient(ellipse at 15% 5%,  rgba(100,20,60,.45) 0%,transparent 50%),
         radial-gradient(ellipse at 85% 95%, rgba(70,15,50,.4)   0%,transparent 50%),
@@ -23,6 +23,7 @@
       font-family:'Montserrat',sans-serif;
       color:var(--cream);
       display:flex; align-items:center; justify-content:center;
+      padding: 40px 0;
     }
 
     #bg-canvas { position:fixed; inset:0; pointer-events:none; z-index:0; }
