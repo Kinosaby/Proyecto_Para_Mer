@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>¿Por qué Solo Me Llamas Así? · Kinosaby</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Cinzel:wght@400;500&family=Special+Elite&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<a href="../../index.html" style="position:fixed; top:20px; left:20px; z-index:100; color:rgba(216,208,224,.5); text-decoration:none; font-family:'Cinzel',serif; font-size:10px; letter-spacing:2px; background:rgba(255,255,255,.05); padding:8px 15px; border-radius:50px; border:1px solid rgba(255,255,255,.1); backdrop-filter:blur(5px); transition:all .3s;">← Volver</a>
+
+<canvas id="bg-canvas"></canvas>
+<div id="progress"></div>
+
+<div id="nav">
+  <div class="nav-dot active" data-i="0"></div>
+  <div class="nav-dot" data-i="1"></div><div class="nav-dot" data-i="2"></div>
+  <div class="nav-dot" data-i="3"></div><div class="nav-dot" data-i="4"></div>
+  <div class="nav-dot" data-i="5"></div><div class="nav-dot" data-i="6"></div>
+  <div class="nav-dot" data-i="7"></div><div class="nav-dot" data-i="8"></div>
+  <div class="nav-dot" data-i="9"></div><div class="nav-dot" data-i="10"></div>
+  <div class="nav-dot" data-i="11"></div><div class="nav-dot" data-i="12"></div>
+  <div class="nav-dot" data-i="13"></div>
+</div>
+
+<!-- ══ COVER ══ -->
+<div id="cover">
+  <div class="cover-band">Arctic Monkeys · AM · 2013 · Una historia por Kinosaby</div>
+
+  <div class="cover-frase">
+    <div class="cover-frase-line">
+      <span class="hi">"</span>Ambos sabemos que las noches<br>
+      fueron hechas <span class="hi">principalmente</span><br>
+      para decir cosas que <span class="hi">no puedes decir de día.</span><span class="hi">"</span>
+    </div>
+  </div>
+
+  <div class="cover-title">¿Por Qué Solo<br>Me Llamas Así?</div>
+  <div class="cover-sub">una historia sin final · todavía</div>
+
+  <div class="cover-rule">
+    <div class="cover-rule-line"></div>
+    <div class="cover-rule-dot"></div>
+    <div class="cover-rule-line"></div>
+  </div>
+
+  <div class="cover-chars">
+    <div class="cc"><div class="cc-av" style="border-color:rgba(192,64,224,.4);">🌃</div><div class="cc-name">Mateo</div></div>
+    <div class="cc"><div class="cc-av" style="border-color:rgba(200,144,48,.4);">🥃</div><div class="cc-name">Daniela</div></div>
+    <div class="cc"><div class="cc-av" style="border-color:rgba(150,130,100,.3);">🚕</div><div class="cc-name">El Taxista</div></div>
+    <div class="cc"><div class="cc-av" style="border-color:rgba(130,140,200,.3);">🎙️</div><div class="cc-name">Renata</div></div>
+    <div class="cc"><div class="cc-av" style="border-color:rgba(160,100,160,.3);">🪟</div><div class="cc-name">La Vecina</div></div>
+  </div>
+
+  <button class="cover-start" id="start-btn">Leer la historia →</button>
+</div>
+
+<!-- ══ STORY ══ -->
+<div class="story">
+
+<!-- I -->
+<section class="chapter ch-1" id="ch-1"><div class="ch-inner">
+  <div class="ch-num reveal">I</div>
+  <h2 class="ch-title reveal d1">Lo que las noches guardan</h2>
+  <div class="ch-text reveal d2">
+    <p class="atm">Hay una versión de uno que solo existe de noche.<br>Y hay personas que solo conocen esa versión.</p>
+    <p><em>Mateo</em> lo entendió tarde — demasiado tarde, de la manera en que siempre se entienden las cosas que importan. Lo entendió una madrugada de octubre, con el teléfono en la mano y la ciudad afuera completamente oscura excepto por los semáforos que cambiaban de color para nadie.</p>
+    <p>Tenía veintiséis años. Trabajaba en una agencia de publicidad de día y era otra cosa de noche. No algo malo — simplemente diferente. De noche se apagaba el filtro que uno pone de día para existir con eficiencia. De noche Mateo decía la verdad.</p>
+    <p>El problema era que la persona a quien le decía la verdad de noche no sabía que había una versión de día que nunca se la decía.</p>
+    <div class="frase">
+      Ambos sabemos que las noches fueron hechas <span class="hi">principalmente</span><br>
+      para decir cosas que <span class="hi">no puedes decir de día.</span>
+    </div>
+    <p>La persona se llamaba <em>Daniela</em>. Y Daniela solo lo conocía de noche.</p>
+    <p>Eso era el problema completo, resumido en una línea.</p>
+  </div>
+</div></section>
+
+<!-- II -->
+<section class="chapter ch-2" id="ch-2"><div class="ch-inner">
+  <div class="ch-num reveal">II</div>
+  <h2 class="ch-title reveal d1">Cómo empezó · La primera llamada</h2>
+  <div class="ch-text reveal d2">
+    <p class="atm">No fue un accidente.<br>Fue exactamente lo que parecía.<br>Y los dos lo supieron desde la primera noche.</p>
+    <p>Daniela y Mateo se conocieron en el trabajo — ella era diseñadora freelance que colaboraba a veces con la misma agencia. De día se cruzaban en reuniones, intercambiaban correos, existían en el mismo espacio con esa distancia profesional que hace que uno no diga lo que piensa.</p>
+    <p>La primera llamada fue un accidente. O así lo llamaron después. Mateo marcó su número a las 11:30 de la noche buscando confirmar algo del proyecto. Daniela contestó. Y en lugar de hablar del proyecto hablaron durante tres horas de todo lo demás.</p>
+    <div class="sdiv"><div class="sdiv-l"></div><div class="sdiv-i">●</div><div class="sdiv-l"></div></div>
+    <p>La segunda llamada no fue accidente.</p>
+    <p>Ni la tercera. Ni las que siguieron durante los meses que siguieron — siempre de noche, siempre tarde, siempre con esa facilidad que las dos personas habían notado pero ninguna había nombrado.</p>
+    <div class="msg-block">
+      <div class="msg sent">¿Sigues despierta?</div>
+      <div class="msg-time">01:22</div>
+      <div class="msg recv">Siempre a esta hora. ¿Tú?</div>
+      <div class="msg-time l">01:23</div>
+      <div class="msg sent">Siempre a esta hora también.</div>
+      <div class="msg-time">01:24</div>
+    </div>
+    <p>Eso fue en enero. Para marzo ya era el patrón: de día, colegas. De noche, algo que ninguno sabía cómo llamar pero que los dos reconocían.</p>
+    <p class="atm">La diferencia era que de noche uno dice la verdad.<br>Y Mateo decía demasiada.</p>
+  </div>
+</div></section>
+
+<!-- III -->
+<section class="chapter ch-3" id="ch-3"><div class="ch-inner">
+  <div class="ch-num reveal">III</div>
+  <h2 class="ch-title reveal d1">Daniela · Lo que ella veía de día</h2>
+  <div class="ch-text reveal d2">
+    <p class="atm">El problema de conocer a alguien solo de noche<br>es que uno nunca sabe quién es de día.<br>Y de día es donde la gente vive.</p>
+    <p><em>Daniela</em> tenía veintiocho años, un estudio propio en un departamento del quinto piso con una ventana que daba a la calle, y la costumbre de trabajar hasta tarde porque de noche la cabeza funcionaba diferente.</p>
+    <p>Lo de Mateo empezó a parecerle raro en abril. No raro como malo — raro como que algo no terminaba de cuadrar. De noche era completamente presente, completamente honesto, con esa intensidad que hace que una conversación a la 1 de la mañana parezca la más importante del mundo. De día era otra cosa. De día era educado, eficiente, correcto.</p>
+    <p>De día era casi un desconocido.</p>
+    <div class="sdiv"><div class="sdiv-l"></div><div class="sdiv-i">●</div><div class="sdiv-l"></div></div>
+    <p>Su amiga <em>Renata</em> le preguntó una tarde cómo iba lo de ese chico.</p>
+    <div class="dlg"><div class="spk"><span class="spk-dot" style="background:#c07090"></span>Renata</div>¿El que te llama tarde?</div>
+    <div class="dlg"><div class="spk"><span class="spk-dot" style="background:#c09030"></span>Daniela</div>Sí. Bueno. No sé.</div>
+    <div class="dlg"><div class="spk"><span class="spk-dot" style="background:#c07090"></span>Renata</div>¿Qué significa no sé?</div>
+    <div class="dlg"><div class="spk"><span class="spk-dot" style="background:#c09030"></span>Daniela</div>Significa que de noche siento que lo conozco completamente. Y de día parece que no nos conociéramos.</div>
+    <div class="dlg"><div class="spk"><span class="spk-dot" style="background:#c07090"></span>Renata</div>¿Le has preguntado por qué solo te llama de noche?</div>
+    <p>Daniela no respondió. Eso también era una respuesta.</p>
+    <div class="frase">
+      Ambos sabemos que las noches fueron hechas principalmente<br>
+      para decir cosas que no puedes decir de día.<br><br>
+      <span class="hi2">Pero ¿qué pasa con lo que no se dice de noche tampoco?</span>
+    </div>
+  </div>
+</div></section>
+
+<!-- IV -->
+<section class="chapter ch-4" id="ch-4"><div class="ch-inner">
+  <div class="ch-num reveal">IV</div>
+  <h2 class="ch-title reveal d1">El taxista y la pregunta sin respuesta</h2>
+  <div class="ch-text reveal d2">
+    <p>A las 3 de la mañana de un jueves, Mateo tomó un taxi de vuelta de ningún lugar en particular — había salido a caminar porque no podía dormir y se había alejado demasiado de su departamento.</p>
+    <p><em>El taxista</em> tenía cincuenta y tantos años, llevaba toda la noche escuchando a gente que subía y bajaba y a veces decía cosas. Era su trabajo escuchar sin guardar. Lo había aprendido con los años.</p>
+    <div class="sdiv"><div class="sdiv-l"></div><div class="sdiv-i">●</div><div class="sdiv-l"></div></div>
+    <div class="dlg"><div class="spk"><span class="spk-dot" style="background:#906858"></span>El Taxista</div>¿Vienes o vas?</div>
+    <div class="dlg"><div class="spk"><span class="spk-dot" style="background:#8a2888"></span>Mateo</div>¿Cómo?</div>
+    <div class="dlg"><div class="spk"><span class="spk-dot" style="background:#906858"></span>El Taxista</div>A esta hora la gente viene de algo o va a algo. Tú tienes cara de ninguno de los dos.</div>
+    <div class="dlg"><div class="spk"><span class="spk-dot" style="background:#8a2888"></span>Mateo</div>Estaba pensando.</div>
+    <div class="dlg"><div class="spk"><span class="spk-dot" style="background:#906858"></span>El Taxista</div>¿En quién?</div>
+    <p>Mateo lo miró por el espejo retrovisor.</p>
+    <div class="dlg"><div class="spk"><span class="spk-dot" style="background:#906858"></span>El Taxista</div>Siempre es en alguien. A las 3 de la mañana uno no camina por la ciudad pensando en proyectos de trabajo.</div>
+    <p>Mateo miró la ventana. Las luces de la ciudad pasando.</p>
+    <div class="dlg"><div class="spk"><span class="spk-dot" style="background:#8a2888"></span>Mateo</div>¿Alguna vez tuvo algo con alguien que solo existía de noche?</div>
+    <div class="dlg"><div class="spk"><span class="spk-dot" style="background:#906858"></span>El Taxista</div>Una vez. Hace muchos años.</div>
+    <div class="dlg"><div class="spk"><span class="spk-dot" style="background:#8a2888"></span>Mateo</div>¿Y qué pasó?</div>
+    <div class="dlg"><div class="spk"><span class="spk-dot" style="background:#906858"></span>El Taxista</div>Que llegó el día. Y de día resultamos ser dos personas que no se conocían.
+    </div>
+    <p>El taxi se detuvo. Mateo pagó. Antes de bajar, el taxista dijo una última cosa:</p>
+    <div class="dlg"><div class="spk"><span class="spk-dot" style="background:#906858"></span>El Taxista</div>Lo que existe solo de noche — hijo — tarde o temprano tiene que enfrentar la luz. Y no todas las cosas sobreviven eso.
+    </div>
+  </div>
+</div></section>
+
+<!-- V -->
+<section class="chapter ch-5" id="ch-5"><div class="ch-inner">
+  <div class="ch-num reveal">V</div>
+  <h2 class="ch-title reveal d1">La vecina · Lo que se escucha a través de las paredes</h2>
+  <div class="ch-text reveal d2">
+    <p><em>La vecina</em> de Daniela tenía paredes delgadas y el sueño ligero. No por chismosa — simplemente la arquitectura del edificio era honesta de esa manera incómoda en que son honestos los edificios viejos.</p>
+    <p>Sabía que Daniela recibía llamadas tarde. Lo sabía por el cambio de ritmo — cuando sonaba el teléfono tarde, los pasos en el departamento cambiaban. Más lentos. Más largos. El tipo de caminar de alguien que está completamente metido en una conversación.</p>
+    <div class="sdiv"><div class="sdiv-l"></div><div class="sdiv-i">●</div><div class="sdiv-l"></div></div>
+    <p>Una mañana en el pasillo, la vecina dijo algo que Daniela no esperaba:</p>
+    <div class="dlg"><div class="spk"><span class="spk-dot" style="background:#8870a0"></span>La Vecina</div>Oye. No es mi asunto. Pero se te escucha feliz de noche y sola de día. Y eso no es sostenible, ¿sabes?</div>
+    <p>Daniela la miró sin saber qué responder.</p>
+    <div class="dlg"><div class="spk"><span class="spk-dot" style="background:#8870a0"></span>La Vecina</div>Tuve algo así hace años. Alguien que solo existía cuando bajaba la guardia. Que de día era perfectamente educado y perfectamente ausente. Y uno aprende, tarde, que la educación de día y la honestidad de noche no compensan una a la otra. Son cosas distintas. Y uno necesita las dos.</div>
+    <div class="dlg"><div class="spk"><span class="spk-dot" style="background:#c09030"></span>Daniela</div>¿Y qué hizo usted?</div>
+    <div class="dlg"><div class="spk"><span class="spk-dot" style="background:#8870a0"></span>La Vecina</div>Esperé demasiado a que el de día fuera como el de noche. Nunca lo fue. La gente es más honesta de noche porque de noche no hay consecuencias. De día las hay. Y ahí es donde la gente elige.</div>
+    <p>La vecina subió las escaleras. Daniela se quedó parada en el pasillo un momento.</p>
+    <div class="frase">
+      Ambos sabemos que las noches fueron hechas principalmente<br>
+      para decir cosas que no puedes decir de día.<br><br>
+      <span class="hi">Pero nadie dice que el de día tenga que escucharlas.</span>
+    </div>
+  </div>
+</div></section>
+
+<!-- VI -->
+<section class="chapter ch-6" id="ch-6"><div class="ch-inner">
+  <div class="ch-num reveal">VI</div>
+  <h2 class="ch-title reveal d1">Renata · La pregunta directa</h2>
+  <div class="ch-text reveal d2">
+    <p><em>Renata</em> era la mejor amiga de Daniela desde la preparatoria — arquitecta, directa, con nula paciencia para los rodeos. Era el tipo de persona que dice lo que piensa porque considera que no decirlo es una forma de faltarle el respeto a la otra persona.</p>
+    <p>Había escuchado suficiente sobre Mateo para tener una opinión que Daniela no había pedido pero que Renata iba a dar de todas formas.</p>
+    <div class="sdiv"><div class="sdiv-l"></div><div class="sdiv-i">●</div><div class="sdiv-l"></div></div>
+    <div class="dlg"><div class="spk"><span class="spk-dot" style="background:#c07090"></span>Renata</div>Daniela. ¿Él sabe que tú sabes que esto no va a ningún lado?</div>
+    <div class="dlg"><div class="spk"><span class="spk-dot" style="background:#c09030"></span>Daniela</div>No lo sé.</div>
+    <div class="dlg"><div class="spk"><span class="spk-dot" style="background:#c07090"></span>Renata</div>¿Y tú sabes que esto no va a ningún lado?</div>
+    <p>Pausa.</p>
+    <div class="dlg"><div class="spk"><span class="spk-dot" style="background:#c09030"></span>Daniela</div>Creo que sí.</div>
+    <div class="dlg"><div class="spk"><span class="spk-dot" style="background:#c07090"></span>Renata</div>¿Y sigues contestando cuando llama?</div>
+    <div class="dlg"><div class="spk"><span class="spk-dot" style="background:#c09030"></span>Daniela</div>Siempre.</div>
+    <div class="dlg"><div class="spk"><span class="spk-dot" style="background:#c07090"></span>Renata</div>Eso es exactamente el problema. No él — tú también. Los dos están eligiendo esto sabiendo lo que es. Y lo que es no es suficiente y los dos lo saben y nadie dice nada porque de noche todo parece suficiente.</div>
+    <p>Daniela miró su café frío.</p>
+    <div class="dlg"><div class="spk"><span class="spk-dot" style="background:#c07090"></span>Renata</div>¿Alguna vez han hablado de día? ¿De verdad? ¿De las cosas que se dicen de noche?</div>
+    <div class="dlg"><div class="spk"><span class="spk-dot" style="background:#c09030"></span>Daniela</div>No.</div>
+    <div class="dlg"><div class="spk"><span class="spk-dot" style="background:#c07090"></span>Renata</div>Entonces no lo conoces. Y él no te conoce a ti. Solo conocen la versión que cada uno muestra cuando la guardia está baja. Y eso — que se puede sentir como lo más íntimo del mundo — a veces es exactamente lo contrario.</div>
+  </div>
+</div></section>
+
+<!-- VII -->
+<section class="chapter ch-7" id="ch-7"><div class="ch-inner">
+  <div class="ch-num reveal">VII</div>
+  <h2 class="ch-title reveal d1">La noche que Mateo dijo demasiado</h2>
+  <div class="ch-text reveal d2">
+    <p class="atm">Hay noches que uno paga después.<br>No porque fueran un error —<br>sino porque fueron demasiado verdaderas<br>para sobrevivir al día siguiente.</p>
+    <p>En junio, un viernes a las 2:47 de la mañana, Mateo la llamó. No había razón particular — era simplemente una de esas noches donde el silencio pesaba demasiado y él sabía que ella iba a contestar.</p>
+    <p>Daniela contestó.</p>
+    <p>Hablaron durante dos horas. De cosas que de día nunca habrían llegado. Y en algún momento, sin planearlo, Mateo dijo algo que no debería haber dicho a las 2 de la mañana porque las cosas que se dicen a las 2 de la mañana no tienen la misma forma a las 9 del día siguiente.</p>
+    <div class="dlg"><div class="spk"><span class="spk-dot" style="background:#8a2888"></span>Mateo</div>¿Puedo decirte algo sin que lo conviertas en algo grande?</div>
+    <div class="dlg"><div class="spk"><span class="spk-dot" style="background:#c09030"></span>Daniela</div>Depende de qué tan grande sea.</div>
+    <div class="dlg"><div class="spk"><span class="spk-dot" style="background:#8a2888"></span>Mateo</div>Creo que eres la única persona a quien le puedo decir esto.</div>
+    <div class="dlg"><div class="spk"><span class="spk-dot" style="background:#c09030"></span>Daniela</div>¿Decirme qué?</div>
+    <p>Pausa larga. El tipo de pausa que Daniela reconocería después — la pausa de alguien decidiendo hasta dónde llegar.</p>
+    <div class="dlg"><div class="spk"><span class="spk-dot" style="background:#8a2888"></span>Mateo</div>Que contigo es diferente. No sé explicarlo mejor. Pero es diferente.</div>
+    <p>Daniela no respondió de inmediato. Eso también fue una pausa — pero de otro tipo.</p>
+    <div class="dlg"><div class="spk"><span class="spk-dot" style="background:#c09030"></span>Daniela</div>¿De día también?</div>
+    <p>Silencio largo. Demasiado largo.</p>
+    <div class="dlg"><div class="spk"><span class="spk-dot" style="background:#8a2888"></span>Mateo</div>Sí.</div>
+    <p>Lo dijo. Pero lo dijo a las 2:47 de la mañana. Y las cosas dichas a las 2:47 de la mañana se prueban de día.</p>
+    <div class="frase">
+      <span class="hi">Ambos sabemos</span> que las noches fueron hechas principalmente<br>
+      para decir cosas que no puedes decir de día.<br><br>
+      <span class="hi2">Pero ¿qué pasa cuando uno lo dice<br>y el día llega de todas formas?</span>
+    </div>
+  </div>
+</div></section>
+
+<!-- VIII -->
+<section class="chapter ch-8" id="ch-8"><div class="ch-inner">
+  <div class="ch-num reveal">VIII</div>
+  <h2 class="ch-title reveal d1">El día después · Lo que Mateo hizo de día</h2>
+  <div class="ch-text reveal d2">
+    <p>El sábado, con el sol completamente adentro y el café caliente en la mano, Daniela esperó.</p>
+    <p>Nada. Ningún mensaje. Ninguna llamada. Mateo de día era silencio.</p>
+    <p>Lo cruzó el lunes en una reunión de trabajo. Él fue completamente normal — educado, eficiente, con esa distancia profesional de siempre. Hablaron del proyecto. Mateo tomó notas. Al final de la reunión dijo que le mandaba los materiales por correo.</p>
+    <p>No mencionó el viernes. No mencionó la llamada. No mencionó las 2:47 de la mañana ni lo que había dicho en ellas.</p>
+    <div class="sdiv"><div class="sdiv-l"></div><div class="sdiv-i">●</div><div class="sdiv-l"></div></div>
+    <p>Esa noche, inevitablemente, él llamó de nuevo.</p>
+    <div class="llamada"><div class="dot"></div> Mateo · Llamada entrante · 01:38</div>
+    <p>Daniela miró el teléfono durante el tiempo que duró la llamada entrante. Cuatro repiques. Cinco.</p>
+    <p>No contestó.</p>
+    <p class="atm">Por primera vez en seis meses,<br>no contestó.</p>
+    <div class="llamada"><div class="dot"></div> Llamada perdida · 01:39</div>
+    <p>Cinco minutos después, un mensaje:</p>
+    <div class="msg-block">
+      <div class="msg recv">¿Todo bien?</div>
+      <div class="msg-time l">01:44</div>
+    </div>
+    <p>Daniela leyó el mensaje. No respondió. Puso el teléfono boca abajo y miró el techo.</p>
+    <p>Afuera, la ciudad seguía con sus luces. El semáforo de la esquina cambiaba de verde a rojo para nadie en particular.</p>
+  </div>
+</div></section>
+
+<!-- IX -->
+<section class="chapter ch-9" id="ch-9"><div class="ch-inner">
+  <div class="ch-num reveal">IX</div>
+  <h2 class="ch-title reveal d1">Los días que siguieron</h2>
+  <div class="ch-text reveal d2">
+    <p class="atm">El silencio de dos personas que se conocen<br>es más ruidoso que cualquier conversación.</p>
+    <p>Daniela no contestó esa noche. Ni la siguiente. Para el jueves, Mateo había dejado de llamar.</p>
+    <p>Renata le preguntó cómo estaba.</p>
+    <div class="dlg"><div class="spk"><span class="spk-dot" style="background:#c09030"></span>Daniela</div>Bien.</div>
+    <div class="dlg"><div class="spk"><span class="spk-dot" style="background:#c07090"></span>Renata</div>Eso no es lo mismo que estar bien.</div>
+    <div class="dlg"><div class="spk"><span class="spk-dot" style="background:#c09030"></span>Daniela</div>Lo sé.</div>
+    <p>Renata no preguntó más. A veces no preguntar más es la forma de respetar que alguien necesita tiempo para procesar algo sin que nadie lo procese por él.</p>
+    <div class="sdiv"><div class="sdiv-l"></div><div class="sdiv-i">●</div><div class="sdiv-l"></div></div>
+    <p>La vecina escuchó pasos tranquilos esa semana. Nada de las largas caminatas de noche. El departamento de Daniela era distinto — como cuando un lugar pierde algo que uno no sabía que estaba ahí hasta que desaparece.</p>
+    <div class="sdiv"><div class="sdiv-l"></div><div class="sdiv-i">●</div><div class="sdiv-l"></div></div>
+    <p>Mateo, por su parte, existía de día con la eficiencia de siempre. Los correos salían a tiempo. Las presentaciones quedaban bien. Nadie en la oficina habría dicho que algo estaba diferente.</p>
+    <p>De noche era otra cosa. De noche el departamento tenía un silencio que él mismo había construido.</p>
+    <div class="llamada"><div class="dot"></div> Daniela · Llamada no iniciada</div>
+    <p>Abrió el chat. La vio en línea. Cerró el chat.</p>
+    <div class="frase">
+      Ambos sabemos que las noches fueron hechas principalmente<br>
+      para decir cosas que no puedes decir de día.<br><br>
+      <span class="hi">¿Y de día?</span><br>
+      <span class="hi2">¿Para qué fueron hechos los días?</span>
+    </div>
+  </div>
+</div></section>
+
+<!-- X -->
+<section class="chapter ch-10" id="ch-10"><div class="ch-inner">
+  <div class="ch-num reveal">X</div>
+  <h2 class="ch-title reveal d1">Lo que Daniela escribió y no envió</h2>
+  <div class="ch-text reveal d2">
+    <p class="atm">Hay mensajes que existen solo en el borrador.<br>Y a veces son los más honestos<br>que uno escribe.</p>
+    <p>Un martes, Daniela abrió el chat con Mateo a las 11 de la noche — que no era ni de día ni de noche del todo, que era ese umbral donde todavía uno puede elegir.</p>
+    <p>Escribió durante quince minutos. Borró. Volvió a escribir. Borró de nuevo.</p>
+    <p>Lo que escribió y borró era esto:</p>
+    <div class="frase" style="color:rgba(216,208,224,.35);font-size:16px;line-height:2.1;">
+      "Mateo. El viernes dijiste que conmigo es diferente.<br>
+      Y yo necesito saber si eso es verdad de día también.<br>
+      Porque de noche todo parece verdad.<br>
+      Y yo ya no sé qué parte de lo que tenemos<br>
+      sobreviviría la luz del día.<br>
+      Y necesito saberlo.<br>
+      No a las 2 de la mañana.<br>
+      De día. Con el sol adentro. Sin la oscuridad que facilita."
+    </div>
+    <p>Lo leyó dos veces.</p>
+    <p>Lo borró.</p>
+    <p>Cerró el chat. Apagó la luz. Se quedó mirando el techo en la oscuridad.</p>
+    <p>Afuera el semáforo seguía cambiando de color. La ciudad seguía siendo la ciudad.</p>
+    <p class="atm">Hay cosas que uno guarda en borradores<br>porque sabe que si las manda<br>algo tiene que cambiar.<br><br>Y cambiar da miedo.<br>Aunque quedarse igual duela más.</p>
+  </div>
+</div></section>
+
+<!-- XI -->
+<section class="chapter ch-11" id="ch-11"><div class="ch-inner">
+  <div class="ch-num reveal">XI</div>
+  <h2 class="ch-title reveal d1">La última llamada · De noche</h2>
+  <div class="ch-text reveal d2">
+    <p>En agosto, tres semanas después del silencio, Mateo llamó una última vez. Las 12:58 de la noche — temprano para su estándar, como si hubiera intentado hacerlo antes de que fuera demasiado tarde de noche.</p>
+
+    <div class="llamada"><div class="dot"></div> Mateo · Llamada entrante · 00:58</div>
+
+    <p>Daniela miró el teléfono.</p>
+    <p>Esta vez contestó.</p>
+    <div class="sdiv"><div class="sdiv-l"></div><div class="sdiv-i">●</div><div class="sdiv-l"></div></div>
+    <div class="dlg"><div class="spk"><span class="spk-dot" style="background:#8a2888"></span>Mateo</div>Hola.</div>
+    <div class="dlg"><div class="spk"><span class="spk-dot" style="background:#c09030"></span>Daniela</div>Hola.</div>
+    <p>Silencio.</p>
+    <div class="dlg"><div class="spk"><span class="spk-dot" style="background:#8a2888"></span>Mateo</div>¿Puedo preguntarte algo?</div>
+    <div class="dlg"><div class="spk"><span class="spk-dot" style="background:#c09030"></span>Daniela</div>Sí.</div>
+    <div class="dlg"><div class="spk"><span class="spk-dot" style="background:#8a2888"></span>Mateo</div>¿Por qué no contestaste?</div>
+    <p>Daniela tardó. No porque no supiera la respuesta — sino porque la respuesta tenía que ser la verdadera y la verdadera era grande.</p>
+    <div class="dlg"><div class="spk"><span class="spk-dot" style="background:#c09030"></span>Daniela</div>Porque cansé de ser solo la persona a la que le dices las cosas de noche.</div>
+    <p>Silencio largo. El tipo de silencio que hace que uno revise si la llamada se cortó.</p>
+    <div class="dlg"><div class="spk"><span class="spk-dot" style="background:#8a2888"></span>Mateo</div>No es lo único que eres.</div>
+    <div class="dlg"><div class="spk"><span class="spk-dot" style="background:#c09030"></span>Daniela</div>Pero es lo único en lo que me convirtiste. Y yo lo dejé. Eso también es mío.
+    </div>
+    <p>Pausa.</p>
+    <div class="dlg"><div class="spk"><span class="spk-dot" style="background:#c09030"></span>Daniela</div>¿Puedes decirme de día lo que me dices de noche?</div>
+    <p>El silencio que siguió fue el más honesto de toda la historia. Porque en ese silencio Mateo calculó el peso de la respuesta. Y Daniela escuchó ese cálculo aunque no hubiera sonido.</p>
+    <div class="dlg"><div class="spk"><span class="spk-dot" style="background:#8a2888"></span>Mateo</div>No lo sé.</div>
+    <div class="dlg"><div class="spk"><span class="spk-dot" style="background:#c09030"></span>Daniela</div>Eso es lo que necesitaba saber.</div>
+    <p>Daniela colgó.</p>
+    <p class="atm">No con enojo.<br>No con drama.<br>Con esa tristeza tranquila<br>de alguien que acaba de confirmar<br>algo que ya sabía<br>pero que necesitaba escuchar en voz alta.</p>
+  </div>
+</div></section>
+
+<!-- XII -->
+<section class="chapter ch-12" id="ch-12"><div class="ch-inner">
+  <div class="ch-num reveal">XII</div>
+  <h2 class="ch-title reveal d1">Lo que cada uno tiene · Después</h2>
+  <div class="ch-text reveal d2">
+    <p class="atm">Las historias que no terminan bien<br>no siempre terminan mal.<br>A veces simplemente terminan.<br>Y eso es suficiente para doler.</p>
+    <p><strong>Daniela</strong> apagó la luz esa noche y durmió mejor de lo que había dormido en semanas. No porque estuviera bien — sino porque había dicho la verdad. Y decir la verdad, aunque lastime, pesa menos que guardarla.</p>
+    <p>Al día siguiente, de día, con el sol completamente adentro, tomó café sola en su estudio con la ventana abierta. La vecina pasó por el pasillo y la saludó. Daniela le sonrió.</p>
+    <p>La vecina asintió sin preguntar. Algunas cosas no necesitan palabras.</p>
+    <div class="sdiv"><div class="sdiv-l"></div><div class="sdiv-i">●</div><div class="sdiv-l"></div></div>
+    <p><strong>Mateo</strong> esa noche no llamó a nadie. Se sentó con el silencio que había construido y lo escuchó como se escucha algo que uno eligió aunque no lo supiera.</p>
+    <p>De noche, sola en el departamento, entendió lo que el taxista le había dicho meses antes. Lo que existe solo de noche tarde o temprano enfrenta la luz. Y ahí es donde la gente elige.</p>
+    <p>Él no había elegido. Y no elegir también es una elección.</p>
+    <div class="sdiv"><div class="sdiv-l"></div><div class="sdiv-i">●</div><div class="sdiv-l"></div></div>
+    <p><strong>Renata</strong> no preguntó. Solo apareció el miércoles con café y sin agenda.</p>
+    <p><strong>El taxista</strong> siguió manejando de noche. Escuchó otras historias. Siempre había otras historias.</p>
+    <p><strong>La vecina</strong> escuchó pasos tranquilos en el departamento de abajo. Pensó que eso también era información.</p>
+    <div class="frase">
+      Ambos sabemos que las noches fueron hechas principalmente<br>
+      para decir cosas que no puedes decir de día.<br><br>
+      <span class="hi2">Pero hay cosas que también merecen ser dichas de día.</span><br>
+      <span class="hi">Y si no pueden serlo —<br>quizás no eran tan verdaderas como parecían de noche.</span>
+    </div>
+  </div>
+</div></section>
+
+<!-- CONTINUARÁ -->
+<section class="chapter ch-fin" id="ch-fin"><div class="ch-inner">
+  <div class="ch-text reveal">
+    <p class="atm" style="margin-top:30px;">
+      Tres semanas después, Mateo envió un mensaje.<br>
+      A las 11 de la mañana.<br>
+      De día.<br><br>
+      Daniela lo leyó.<br>
+      Y tardó en responder no porque no supiera qué decir —<br>
+      sino porque esta vez quería decirlo bien.
+    </p>
+  </div>
+
+  <div class="continua reveal d2">
+    <div class="continua-dots">
+      <div class="continua-dot"></div>
+      <div class="continua-dot"></div>
+      <div class="continua-dot"></div>
+    </div>
+    <div class="continua-word">Continuará…</div>
+    <div class="continua-sub">
+      Porque algunas historias no terminan de noche.<br>
+      Algunas esperan a ver qué hacen de día.
+    </div>
+    <div class="frase-final">
+      "Ambos sabemos que las noches fueron hechas principalmente<br>
+      para decir cosas que no puedes decir de día."<br><br>
+      — Why'd You Only Call Me When You're High?<br>
+      Arctic Monkeys · AM · 2013
+    </div>
+    <div class="end-sig">Kinosaby</div>
+  </div>
+</div></section>
+
+</div><!-- /story -->
+
+<script src="script.js"></script>
+</body>
+</html>
