@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Para ti... 💕</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300;1,600&family=Josefin+Sans:wght@100;300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="cursor">💗</div>
+<div id="bg"></div>
+<canvas id="star-canvas"></canvas>
+<a href="../index.html" class="btn-volver">Volver al Portal</a>
+
+<div id="app">
+
+    <!-- ══ S1: INTRO ══ -->
+    <section id="s1" class="screen active">
+        <div class="card fade-in">
+            <span class="icon">💌</span>
+            <span class="label">Solo para tus ojos</span>
+            <h1 class="heading">Para mi persona favorita</h1>
+            <div class="divider"></div>
+            <p class="subtext">He preparado algo especial...<br>¿Te atreves a descubrirlo?</p>
+            <button class="btn btn-primary" onclick="goTo(2)">Abrir ✨</button>
+        </div>
+    </section>
+
+    <!-- ══ S2: SCANNER ══ -->
+    <section id="s2" class="screen">
+        <div class="card">
+            <span class="label">Verificación</span>
+            <h2 class="heading">¿Eres tú?</h2>
+            <div class="divider"></div>
+            <p class="subtext">Necesito confirmar que eres<br>la dueña de mi corazón...</p>
+            <div class="scanner-wrap" id="scannerWrap" onclick="startScan()">
+                <div class="ring-outer" id="ringOuter"></div>
+                <div class="ring-inner">
+                    <span class="scan-emoji">👆</span>
+                    <div class="scan-beam" id="scanBeam"></div>
+                </div>
+            </div>
+            <p class="scan-status" id="scanStatus">Toca para verificar</p>
+        </div>
+    </section>
+
+    <!-- ══ S3: MEMORY GAME ══ -->
+    <section id="s3" class="screen">
+        <div class="game-top">
+            <span class="label">Mini juego de amor</span>
+            <h2 class="heading">El Juego de la Memoria</h2>
+            <p class="subtext">Encuentra las 6 parejas para continuar ✨</p>
+            <div class="prog-wrap">
+                <div class="prog-fill" id="progFill"></div>
+            </div>
+            <p class="pairs-label" id="pairsLabel">0 / 6 PAREJAS</p>
+        </div>
+        <div class="mem-grid" id="memGrid"></div>
+    </section>
+
+    <!-- ══ S4: REASONS ══ -->
+    <section id="s4" class="screen">
+        <div class="card" style="max-width:450px">
+            <span class="label">Lo que siento</span>
+            <h2 class="heading">Tres cosas que<br>adoro de ti</h2>
+            <div class="divider"></div>
+            <div class="reasons-list" id="reasonsList">
+                <div class="reason">
+                    <span class="rnum">I</span>
+                    <p class="rtext">Tu sonrisa transforma cualquier momento ordinario en algo extraordinario. ☀️</p>
+                </div>
+                <div class="reason">
+                    <span class="rnum">II</span>
+                    <span class="rnum">II</span>
+                    <p class="rtext">La forma en que ves el mundo me hace querer verlo siempre a tu lado. 🌍</p>
+                </div>
+                <div class="reason">
+                    <span class="rnum">III</span>
+                    <p class="rtext">Tu autenticidad y ese corazón enorme que tiene espacio para todos. 💖</p>
+                </div>
+            </div>
+            <button class="btn btn-primary hidden" id="btn4" onclick="goTo(5)">Hay más... 🌹</button>
+        </div>
+    </section>
+
+    <!-- ══ S5: TYPEWRITER ══ -->
+    <section id="s5" class="screen">
+        <div class="card">
+            <span class="label">Desde mi corazón</span>
+            <div class="divider"></div>
+            <div id="tw-text"></div>
+            <button class="btn btn-primary hidden" id="btn5" onclick="goTo(6)">Una última cosa... 💕</button>
+        </div>
+    </section>
+
+    <!-- ══ S6: FINALE ══ -->
+    <section id="s6" class="screen">
+        <div class="card">
+            <div class="orbit-system">
+                <div class="hc">❤️</div>
+                <div class="ho" style="--dur:3.2s">💗</div>
+                <div class="ho" style="--dur:3.2s; animation-delay:-1.07s">💕</div>
+                <div class="ho" style="--dur:3.2s; animation-delay:-2.13s">💓</div>
+            </div>
+            <span class="label">La gran pregunta</span>
+            <p class="final-q">¿Me dejas seguir siendo<br>parte de tu historia?</p>
+            <div class="final-btns">
+                <button class="btn btn-primary btn-yes" id="yesBtn">¡Sí, mil veces sí! 😍</button>
+                <button class="btn btn-no" id="noBtn">Lo pensaré... 🤔</button>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<!-- ══ MODAL ══ -->
+<div id="modal">
+    <div class="modal-box">
+        <div style="font-size:3rem;margin-bottom:14px">🥹</div>
+        <h2 class="heading">¡Me haces el más feliz del mundo!</h2>
+        <div class="divider"></div>
+        <p class="subtext">Prepárate, porque lo que viene<br>será absolutamente increíble...</p>
+        <button class="btn btn-primary" style="margin-top:22px" onclick="location.reload()">Empezar de nuevo 💕</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
