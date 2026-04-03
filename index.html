@@ -97,6 +97,11 @@
         <div class="rule-diamond"></div>
         <div class="rule-line"></div>
       </div>
+      <!-- CONTADOR DE PROYECTOS -->
+      <div class="project-counter">
+        <span class="pc-num" id="pc-num">0</span>
+        <span class="pc-label">proyectos hechos para ti</span>
+      </div>
     </header>
 
     <!-- ══ 1 · CARTAS ESPECIALES ══ -->
@@ -426,6 +431,22 @@
   </div>
 
   <script src="script.js?v=6"></script>
+  <script>
+    // Contador automático — cuenta todas las tarjetas del DOM
+    // Para agregar proyectos: simplemente añade una nueva .card y el número se actualiza solo
+    (function initCounter() {
+      const total = document.querySelectorAll('.card').length;
+      const el    = document.getElementById('pc-num');
+      if (!el || total === 0) return;
+      let current = 0;
+      const step  = Math.ceil(total / 40);
+      const iv    = setInterval(() => {
+        current = Math.min(current + step, total);
+        el.textContent = current;
+        if (current >= total) clearInterval(iv);
+      }, 30);
+    })();
+  </script>
 </body>
 
 </html>
