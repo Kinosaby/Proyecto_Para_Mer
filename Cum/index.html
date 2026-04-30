@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday, MoonCherry 🌙🍒</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<canvas id="sky-canvas"></canvas>
+<canvas id="burst-canvas"></canvas>
+<div id="custom-cursor"></div>
+
+<!-- Moon -->
+<div id="moon-container">
+  <svg id="moon-svg" class="glow-pulse" viewBox="0 0 260 260" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <radialGradient id="moonGrad" cx="42%" cy="38%" r="58%">
+        <stop offset="0%" stop-color="#fff8e7"/>
+        <stop offset="40%" stop-color="#ffe8b0"/>
+        <stop offset="100%" stop-color="#c8904a"/>
+      </radialGradient>
+      <radialGradient id="moonGlow" cx="50%" cy="50%" r="50%">
+        <stop offset="60%" stop-color="transparent"/>
+        <stop offset="100%" stop-color="rgba(255,220,120,0.18)"/>
+      </radialGradient>
+      <filter id="softBlur">
+        <feGaussianBlur stdDeviation="3"/>
+      </filter>
+    </defs>
+    <circle cx="130" cy="110" r="110" fill="url(#moonGlow)" filter="url(#softBlur)" opacity="0.9"/>
+    <circle cx="130" cy="110" r="72" fill="url(#moonGrad)"/>
+    <circle cx="110" cy="95" r="8" fill="rgba(0,0,0,0.06)"/>
+    <circle cx="148" cy="128" r="5" fill="rgba(0,0,0,0.05)"/>
+    <circle cx="125" cy="135" r="3.5" fill="rgba(0,0,0,0.04)"/>
+    <path d="M 130 38 A 72 72 0 0 0 130 182 A 55 72 0 0 1 130 38 Z" fill="rgba(60,30,10,0.22)"/>
+    <g transform="translate(142, 80)" opacity="0.85">
+      <circle cx="0" cy="0" r="5" fill="#f5b8c4"/>
+      <circle cx="7" cy="-3" r="4.5" fill="#e8728a"/>
+      <circle cx="7" cy="5" r="4.5" fill="#f5b8c4"/>
+      <circle cx="-3" cy="7" r="4.5" fill="#e8728a"/>
+      <circle cx="-6" cy="-2" r="4.5" fill="#f5b8c4"/>
+      <circle cx="1" cy="1" r="3" fill="#fff0f4"/>
+      <line x1="1" y1="1" x2="5" y2="12" stroke="#7a3a3a" stroke-width="1" stroke-linecap="round"/>
+    </g>
+    <g transform="translate(105, 130)" opacity="0.6">
+      <circle cx="0" cy="0" r="3.5" fill="#f5b8c4"/>
+      <circle cx="5" cy="-2" r="3" fill="#e8728a"/>
+      <circle cx="5" cy="4" r="3" fill="#f5b8c4"/>
+      <circle cx="-2" cy="5" r="3" fill="#e8728a"/>
+      <circle cx="-4" cy="-1" r="3" fill="#f5b8c4"/>
+      <circle cx="0.5" cy="1" r="2" fill="#fff0f4"/>
+    </g>
+  </svg>
+</div>
+
+<!-- Main UI -->
+<div id="ui">
+  <p class="line" id="label-top">30 de Abril &nbsp;·&nbsp; Un día especial</p>
+  <h1 class="line" id="main-name">América Azyade</h1>
+  <p class="line" id="sub-name">Feliz Cumpleaños</p>
+  <div id="divider"></div>
+  <div id="nicknames" class="line">
+    <span class="nick" id="n1">Piojito</span>
+    <span class="nick" id="n2">Pulga</span>
+    <span class="nick" id="n3">MoonCherry</span>
+  </div>
+  <p class="line" id="message">
+    Hay personas que llegan a tu vida<br>
+    y la iluminan como la luna ilumina la noche.<br>
+    Tú eres una de esas personas.<br>
+    Hoy el universo celebra que existes.
+  </p>
+  <p class="line" id="date-line">Abril · 30 · 2026</p>
+  <p class="line" id="hint">toca la pantalla para crear magia ✦</p>
+</div>
+
+<!-- Botón volver -->
+<a href="../index.html" class="btn-volver">Volver al Portal</a>
+
+<script src="script.js"></script>
+</body>
+</html>
