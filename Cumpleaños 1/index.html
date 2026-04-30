@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MoonCherry — VHS Birthday</title>
+<link href="https://fonts.googleapis.com/css2?family=VT323&family=Syncopate:wght@400;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="custom-cursor"></div>
+<div id="crt">
+  <div id="screen">
+    <canvas id="bg"></canvas>
+    <div id="timestamp">30/04/2026 &nbsp; 00:00:00</div>
+    <div id="rec">● REC</div>
+    <div id="content">
+      <div id="play-screen">
+        <svg id="cassette-svg" width="160" height="96" viewBox="0 0 160 96">
+          <rect x="4" y="4" width="152" height="88" rx="8" fill="#1a0028" stroke="#ff2d78" stroke-width="2"/>
+          <rect x="18" y="14" width="124" height="52" rx="4" fill="#0a000f" stroke="#555" stroke-width="1"/>
+          <circle id="reel-l" cx="50" cy="40" r="18" fill="none" stroke="#ff2d78" stroke-width="2"/>
+          <circle cx="50" cy="40" r="8" fill="#ff2d78" opacity="0.4"/>
+          <circle id="reel-r" cx="110" cy="40" r="18" fill="none" stroke="#00f5ff" stroke-width="2"/>
+          <circle cx="110" cy="40" r="8" fill="#00f5ff" opacity="0.4"/>
+          <rect x="60" y="75" width="40" height="12" rx="3" fill="#ffe600" opacity="0.8"/>
+          <text x="80" y="85" text-anchor="middle" font-family="VT323" font-size="9" fill="#050008">MOONCHERRY</text>
+          <rect x="32" y="22" width="96" height="3" rx="1" fill="#333"/>
+          <path d="M 62 75 Q 80 68 98 75" fill="none" stroke="#444" stroke-width="2"/>
+        </svg>
+        <button id="play-btn" onclick="startShow()">▶ PRESS PLAY</button>
+      </div>
+      <div id="main-screen">
+        <div id="glitch-name" data-text="América Azyade">América Azyade</div>
+        <div id="sub-text">Feliz Cumpleaños · 30 Abril 2026</div>
+        <div id="nicks-row">
+          <span class="nick-tag">Piojito</span>
+          <span class="nick-tag">Pulga</span>
+          <span class="nick-tag">MoonCherry</span>
+        </div>
+        <div id="message-box">
+          Eres la canción favorita<br>
+          que suena en loop en mi cabeza.<br>
+          Hoy el universo te dedica<br>
+          su mejor frecuencia. 📼
+        </div>
+        <div id="date-vhs">// 30 · IV · MMXXVI //</div>
+      </div>
+    </div>
+    <div id="hint-vhs">[ toca la pantalla para efectos ]</div>
+  </div>
+</div>
+<a href="../index.html" class="btn-volver">Volver al Portal</a>
+<script src="script.js"></script>
+</body>
+</html>
